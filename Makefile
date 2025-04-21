@@ -40,3 +40,4 @@ endif
 # Create an empty .nojekyll file to prevent GitHub Pages from using Jekyll
 # This is important for Flutter web apps
 .PHONY: deploy
+make deploy OUTPUT=portfolio
