@@ -57,7 +57,7 @@ class _MyAppState extends State<MyApp> {
           primary: const Color(0xFF8D73E2),
           secondary: const Color(0xFF6451A4),
           error: const Color(0xFFF45866),
-          background: Colors.white,
+          surface: Colors.white,
         ),
         useMaterial3: true,
         fontFamily: 'Roboto',

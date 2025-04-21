@@ -5,7 +5,7 @@ class TopNavigationBar extends StatelessWidget {
   final int currentIndex;
   final Function(int) onTap;
   final List<String> pageTitles = const ['Présentation', 'Mes projets', 'Me contacter'];
-  final List<IconData> pageIcons = const [FontAwesomeIcons.user, FontAwesomeIcons.cog, FontAwesomeIcons.envelope];
+  final List<IconData> pageIcons = const [FontAwesomeIcons.user, FontAwesomeIcons.gear, FontAwesomeIcons.envelope];
 
   const TopNavigationBar({
     super.key, 
@@ -20,7 +20,7 @@ class TopNavigationBar extends StatelessWidget {
         color: const Color.fromRGBO(163, 255, 183, 1),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.1),
+            color: Colors.black.withAlpha(26),
             spreadRadius: 0,
             blurRadius: 5,
             offset: const Offset(0, 2),
@@ -45,9 +45,9 @@ class TopNavigationBar extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 15),
         decoration: BoxDecoration(
-          color: isActive ? Colors.black.withOpacity(0.05) : Colors.transparent,
+          color: isActive ? Colors.black.withAlpha(13) : Colors.transparent,
           boxShadow: isActive 
-              ? [BoxShadow(color: Colors.black.withOpacity(0.1), blurRadius: 4, offset: const Offset(0, 2))] 
+              ? [BoxShadow(color: Colors.black.withAlpha(26), blurRadius: 4, offset: const Offset(0, 2))]
               : null,
         ),
         child: Row(
@@ -55,7 +55,7 @@ class TopNavigationBar extends StatelessWidget {
           children: [
             FaIcon(
               pageIcons[index],
-              color: isActive ? const Color(0xFF8D73E2) : Colors.black.withOpacity(0.7),
+              color: isActive ? const Color(0xFF8D73E2) : Colors.black.withAlpha(179),
               size: 25,
             ),
             const SizedBox(width: 10),
@@ -63,7 +63,7 @@ class TopNavigationBar extends StatelessWidget {
               pageTitles[index],
               style: TextStyle(
                 fontSize: 19,
-                color: isActive ? const Color(0xFF8D73E2) : Colors.black.withOpacity(0.7),
+                color: isActive ? const Color(0xFF8D73E2) : Colors.black.withAlpha(179),
               ),
             ),
           ],
