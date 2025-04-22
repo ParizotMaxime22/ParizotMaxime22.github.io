@@ -17,6 +17,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.2"
+  captcha_verification:
+    dependency: "direct main"
+    description:
+      name: captcha_verification
+      sha256: cf1adaca4435c2231cc1e2d6b81531b75916423575e2a9ccd2e33cf8c6bd2f17
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.1+1"
   characters:
     dependency: transitive
     description:

@@ -8,8 +8,8 @@ class TopNavigationBar extends StatelessWidget {
   final List<IconData> pageIcons = const [FontAwesomeIcons.user, FontAwesomeIcons.gear, FontAwesomeIcons.envelope];
 
   const TopNavigationBar({
-    super.key, 
-    required this.currentIndex, 
+    super.key,
+    required this.currentIndex,
     required this.onTap,
   });
 
@@ -17,10 +17,10 @@ class TopNavigationBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: const Color.fromRGBO(163, 255, 183, 1),
+        color: const Color.fromRGBO(166, 163, 255, 1.0),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withAlpha(26),
+            color: Colors.black.withAlpha(150),
             spreadRadius: 0,
             blurRadius: 5,
             offset: const Offset(0, 2),
@@ -39,14 +39,14 @@ class TopNavigationBar extends StatelessWidget {
 
   Widget _buildNavItem(int index) {
     final bool isActive = index == currentIndex;
-    
+
     return InkWell(
       onTap: () => onTap(index),
       child: Container(
         padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 15),
         decoration: BoxDecoration(
           color: isActive ? Colors.black.withAlpha(13) : Colors.transparent,
-          boxShadow: isActive 
+          boxShadow: isActive
               ? [BoxShadow(color: Colors.black.withAlpha(26), blurRadius: 4, offset: const Offset(0, 2))]
               : null,
         ),
@@ -55,15 +55,15 @@ class TopNavigationBar extends StatelessWidget {
           children: [
             FaIcon(
               pageIcons[index],
-              color: isActive ? const Color(0xFF8D73E2) : Colors.black.withAlpha(179),
+              color: isActive ? const Color(0xFFFDFDFD) : Colors.black.withAlpha(179),
               size: 25,
             ),
             const SizedBox(width: 10),
             Text(
               pageTitles[index],
               style: TextStyle(
-                fontSize: 19,
-                color: isActive ? const Color(0xFF8D73E2) : Colors.black.withAlpha(179),
+                fontSize: 25,
+                color: isActive ? const Color(0xFFFDFDFD) : Colors.black.withAlpha(179),
               ),
             ),
           ],
