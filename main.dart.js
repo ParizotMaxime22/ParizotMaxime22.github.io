@@ -74517,14 +74517,13 @@ A.a7J.prototype={
 $0(){return this.a.d.$1(this.b)},
 $S:0}
 A.a8i.prototype={
-$1(a){var s=self.document.createElement("img")
-s.src="assets/cv.png"
-s.style.width="100%"
-s.style.height="100%"
-s.style.objectFit="contain"
-s.style.display="block"
-s.style.margin="0 auto"
-return s},
+$1(a){var s=self,r=A.m(s.window.location.pathname),q=s.document.createElement("img")
+q.src=r+"assets/cv.png"
+q.style.width="100%"
+q.style.height="100%"
+q.style.objectFit="contain"
+q.style.display="block"
+return q},
 $S:139}
 A.Hl.prototype={
 M(a){return A.ao5(A.j_(A.b([new A.Jn(this.c,this.d,null),A.aij(this.e)],t.E),B.b3,B.ae,B.aO))}}
