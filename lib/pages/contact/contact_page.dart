@@ -90,7 +90,7 @@ class _ContactPageState extends State<ContactPage> {
             style: Theme.of(context).textTheme.bodyLarge,
           ),
           Text(
-            "N'hésitez pas à m'envoyer un mail !",
+            "N'hésitez pas à m'envoyer un email !",
             style: Theme.of(context).textTheme.bodyLarge,
           ),
           const SizedBox(height: 16),
@@ -338,7 +338,7 @@ class _ContactPageState extends State<ContactPage> {
                                     ),
                                     const SizedBox(height: 16),
                                     const Text(
-                                      "Ce formulaire n'est pas disponible pour le moment, celui-ci sera utilisable à l'avenir. Veuillez me contacter par Mail pour le moment.",
+                                      "Ce formulaire n'est pas disponible pour le moment, celui-ci sera utilisable à l'avenir. Veuillez me contacter par email pour le moment.",
                                       style: TextStyle(
                                         fontSize: 18,
                                         fontWeight: FontWeight.bold,
