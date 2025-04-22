@@ -23037,7 +23037,7 @@ a7J:function a7J(a,b){this.a=a
 this.b=b},
 azP(){var s=self.window.location.pathname,r=B.d.Pv(s,"/")?s:s+"/"
 $.akQ()
-$.tF().xM("cv-image",new A.a8i(r+"assets/cv.png"),!0)},
+$.tF().xM("cv-image",new A.a8i(r+"assets/assets/cv.png"),!0)},
 a8i:function a8i(a){this.a=a},
 Hl:function Hl(a,b,c,d){var _=this
 _.c=a
