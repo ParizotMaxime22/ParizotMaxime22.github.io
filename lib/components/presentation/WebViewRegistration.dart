@@ -5,11 +5,15 @@ import 'package:flutter/foundation.dart';
 class WebInitialize {
   static void registerWebView() {
     if (!kIsWeb) return;
+    // Get the correct base path for assets
+    final base = web.window.location.pathname;
+    // Guarantee trailing /
+    final normalizedBase = base.endsWith('/') ? base : '$base/';
+    final assetPath = '${normalizedBase}assets/cv.png';
     // ignore: undefined_prefixed_name
     ui.platformViewRegistry.registerViewFactory(
       'cv-image',
           (int viewId) {
-        final assetPath = '${web.window.location.pathname}assets/cv.png';
         final imageElement = web.HTMLImageElement()
           ..src = assetPath
           ..style.width = '100%'
