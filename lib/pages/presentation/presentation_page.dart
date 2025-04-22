@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class PresentationPage extends StatelessWidget {
@@ -63,7 +64,7 @@ class PresentationPage extends StatelessWidget {
                 ),
                 WidgetSpan(child: SizedBox(height: 35,)),
                 TextSpan(text: "Le monde du développement est pour moi une opportunité de m’épanouir dans un domaine qui m’a toujours intéressé : l’informatique et la technologie.\n"
-                    "Ce choix n’a pas été une simple décision d’opportunisme, mais une véritable tentative de renouer avec mon objectif d’enfance que je n’ai pu atteindre à la suite de difficultés scolaires et personnel lors de mon enfance.\n"),
+                    "Ce choix n’a pas été une simple décision d’opportunisme, mais une véritable tentative de renouer avec mon objectif de toujours que je n’ai pu atteindre à la suite de difficultés scolaires et personnel lors de mon enfance.\n"),
                 WidgetSpan(child: SizedBox(height: 35,)),
                 TextSpan(text:
                 "Il m’a fallu pour cela faire mes preuves face à d’autres candidats mieux qualifiés que moi, prouver la force de ma motivation et de mon envie de réussir.\n"),
@@ -79,7 +80,10 @@ class PresentationPage extends StatelessWidget {
           Text("Mon CV",style: Theme.of(context).textTheme.headlineSmall,),
           Center(
             child: Container(
-              constraints: const BoxConstraints(maxWidth: 800),
+              constraints: const BoxConstraints(
+                maxWidth: 800,
+                maxHeight: 1132, // or an appropriate height for your CV image aspect
+              ),
               decoration: BoxDecoration(
                 boxShadow: [
                   BoxShadow(
@@ -90,12 +94,19 @@ class PresentationPage extends StatelessWidget {
                   ),
                 ],
               ),
-              child: Image.asset(
-                'assets/cv.png', // Make sure to add your CV image to assets
+              child: kIsWeb
+                  ? const SizedBox(
+                width: 800,
+                height: 1132, // match the constraints above
+                child: HtmlElementView(viewType: 'cv-image'),
+              )
+                  : Image.asset(
+                'assets/cv.png',
                 fit: BoxFit.contain,
               ),
             ),
           ),
+
           const SizedBox(height: 20),
         ],
       ),

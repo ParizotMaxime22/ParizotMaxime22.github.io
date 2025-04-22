@@ -1,11 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/components/presentation/WebViewRegistration.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'pages/presentation/presentation_page.dart';
 import 'pages/projects/projects_page.dart';
 import 'pages/contact/contact_page.dart';
 import 'layout/portfolio_layout.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 
 void main() {
+  // Initialize web platform specific features
+  if (kIsWeb) {
+    WebInitialize.registerWebView();
+  }
+  
   runApp(const MyApp());
 }
 
