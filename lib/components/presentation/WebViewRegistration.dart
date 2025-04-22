@@ -9,13 +9,13 @@ class WebInitialize {
     ui.platformViewRegistry.registerViewFactory(
       'cv-image',
           (int viewId) {
+        final assetPath = '${web.window.location.pathname}assets/cv.png';
         final imageElement = web.HTMLImageElement()
-          ..src = 'assets/cv.png'
+          ..src = assetPath
           ..style.width = '100%'
-          ..style.height = '100%'  // Ensure it fills the container
+          ..style.height = '100%'
           ..style.objectFit = 'contain'
-          ..style.display = 'block' // Remove default inline gap
-          ..style.margin = '0 auto'; // Center horizontally if needed
+          ..style.display = 'block';
         return imageElement;
       },
     );
