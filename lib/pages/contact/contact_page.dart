@@ -62,7 +62,8 @@ class _ContactPageState extends State<ContactPage> {
     final Uri emailUri = Uri(
       scheme: 'mailto',
       path: 'parizot.maxime22@gmail.com',
-      queryParameters: {'subject': 'Contact depuis le site portfolio'},
+      query:
+          'subject=${Uri.encodeComponent('Suite au visionnage de votre portfolio:')}',
     );
 
     if (!await launchUrl(emailUri)) {
@@ -244,10 +245,17 @@ class _ContactPageState extends State<ContactPage> {
                               labelText: "Êtes vous vraiment humain ?",
                               errorText: "",
                               onVerified: _onCaptchaVerified,
+                              verifiedWidget: const Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Icon(Icons.verified),
+                                  SizedBox(width: 5),
+                                  Text("Vérifié"),
+                                ],
+                              ),
                             ),
                           ),
                           const SizedBox(height: 16),
-                          // <-- MODIFIED CONDITION AND TEXT
                           if (_captchaAttempted && !_captchaVerified)
                             const Text(
                               'La vérification a échoué. Veuillez réessayer.',
