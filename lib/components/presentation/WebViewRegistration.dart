@@ -9,7 +9,7 @@ class WebInitialize {
     final base = web.window.location.pathname;
     // Guarantee trailing /
     final normalizedBase = base.endsWith('/') ? base : '$base/';
-    final assetPath = '${normalizedBase}assets/cv.png';
+    final assetPath = '${normalizedBase}assets/assets/cv.png';
     // ignore: undefined_prefixed_name
     ui.platformViewRegistry.registerViewFactory(
       'cv-image',
