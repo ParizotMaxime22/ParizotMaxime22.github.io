@@ -19,6 +19,13 @@ class _ProjectsPageState extends State<ProjectsPage> {
       description: "Une application sociale dédiée aux fan de K-Pop offrant une mise en relation via un système de swipe ainsi qu'une librairie d'idoles et groupes d'artistes, et une page affichant les dernières news sur le thème de la K-Pop.\nCréer et développé par Clément Romond.",
       technologies: ['Flutter', 'Firebase', 'Dart'],
       linkUrl: 'https://meetbiak.webflow.io/',
+      screenshots: [
+        'assets/images/screenshots/project1/screen1.jpeg',
+        'assets/images/screenshots/project1/screen2.jpeg',
+        'assets/images/screenshots/project1/screen3.jpeg',
+        'assets/images/screenshots/project1/screen4.jpeg',
+        'assets/images/screenshots/project1/screen5.jpeg',
+      ],
     ),
     // const Project(
     //   id: 'p2',
@@ -45,7 +52,7 @@ class _ProjectsPageState extends State<ProjectsPage> {
     //   linkUrl: 'https://example.com/project4',
     // ),
   ];
-
+  
   final List<Project> personalProjects = [
     const Project(
       id: 'personal1',
@@ -53,6 +60,18 @@ class _ProjectsPageState extends State<ProjectsPage> {
       imageUrl: 'assets/images/personal1.jpg',
       description: "Ma propre application mobile permettant la gestion des ingrédients disponibles chez soit, la recherche de recettes en fonctions de ceux ci, la gestion de sa liste de courses, et enfin l'aide d'un 'chef virtuel' tournant sous Gemini.",
       technologies: ['Flutter', 'SQLite', 'Firebase', 'Dart'],
+      screenshots: [
+        'assets/images/screenshots/personal1/screen1.png',
+        'assets/images/screenshots/personal1/screen2.png',
+        'assets/images/screenshots/personal1/screen3.png',
+        'assets/images/screenshots/personal1/screen4.png',
+        'assets/images/screenshots/personal1/screen5.png',
+        'assets/images/screenshots/personal1/screen6.png',
+        'assets/images/screenshots/personal1/screen7.png',
+        'assets/images/screenshots/personal1/screen8.png',
+        'assets/images/screenshots/personal1/screen9.png',
+        'assets/images/screenshots/personal1/screen10.png',
+      ],
     ),
     const Project(
       id: 'personal2',
@@ -60,6 +79,8 @@ class _ProjectsPageState extends State<ProjectsPage> {
       imageUrl: 'assets/images/personal2.png',
       description: "Un bot Discord permettant aux utilisateurs l'intéraction avec un modèle de language large tournant en local via des requêtes API, intègre une mémoire conversationnelle liée à chaque utilisateur.",
       technologies: ['Python', 'Large Language Models', 'Gestion API'],
+      screenshots: [
+      ],
     ),
     // const Project(
     //   id: 'personal3',

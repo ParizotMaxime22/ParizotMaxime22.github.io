@@ -77,7 +77,7 @@ class PresentationPage extends StatelessWidget {
           const SizedBox(height: 40),
 
           // CV Section
-          Text("Mon CV",style: Theme.of(context).textTheme.headlineSmall,),
+          Text("Mon CV version numérique",style: Theme.of(context).textTheme.headlineSmall,),
           Center(
             child: Container(
               constraints: const BoxConstraints(

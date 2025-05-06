@@ -7,6 +7,7 @@ class Project {
   final String description;
   final List<String> technologies;
   final String? linkUrl;
+  final List<String>? screenshots;
 
   const Project({
     required this.id,
@@ -15,6 +16,7 @@ class Project {
     required this.description,
     required this.technologies,
     this.linkUrl,
+    this.screenshots,
   });
   
   /// Gets the correct image URL depending on the platform and environment

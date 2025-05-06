@@ -73,6 +73,22 @@ class ProjectItem extends StatelessWidget {
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
           ),
+          const SizedBox(height: 4),
+          SizedBox(
+            width: 250,
+            child: Text(
+              project.description.length > 25 
+                ? '${project.description.substring(0, 150)}...'
+                : project.description,
+              style: TextStyle(
+                fontSize: 12,
+                color: Colors.grey[700],
+              ),
+              textAlign: TextAlign.center,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+            ),
+          ),
         ],
       ),
     );
