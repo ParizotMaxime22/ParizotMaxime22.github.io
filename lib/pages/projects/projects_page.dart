@@ -16,7 +16,7 @@ class _ProjectsPageState extends State<ProjectsPage> {
       id: 'p1',
       name: 'MeetBiak',
       imageUrl: 'assets/images/project1.jpg',
-      description: "Une application sociale dédiée aux fan de K-Pop offrant une mise en relation via un système de swipe ainsi qu'une librairie d'idoles et groupes d'artistes, et une page affichant les dernières news sur le thème de la K-Pop.",
+      description: "Une application sociale dédiée aux fan de K-Pop offrant une mise en relation via un système de swipe ainsi qu'une librairie d'idoles et groupes d'artistes, et une page affichant les dernières news sur le thème de la K-Pop.\nCréer et développé par Clément Romond.",
       technologies: ['Flutter', 'Firebase', 'Dart'],
       linkUrl: 'https://meetbiak.webflow.io/',
     ),
@@ -53,15 +53,13 @@ class _ProjectsPageState extends State<ProjectsPage> {
       imageUrl: 'assets/images/personal1.jpg',
       description: "Ma propre application mobile permettant la gestion des ingrédients disponibles chez soit, la recherche de recettes en fonctions de ceux ci, la gestion de sa liste de courses, et enfin l'aide d'un 'chef virtuel' tournant sous Gemini.",
       technologies: ['Flutter', 'SQLite', 'Firebase', 'Dart'],
-      linkUrl: 'https://github.com/myusername/personal1',
     ),
     const Project(
       id: 'personal2',
       name: "Whitecrow's Scuffed bot",
-      imageUrl: 'assets/images/personal2.jpg',
-      description: 'An open-source library I created to simplify common programming tasks in Dart applications.',
-      technologies: ['Python', 'Large Language Models', 'API Requests'],
-      linkUrl: 'https://github.com/myusername/personal2',
+      imageUrl: 'assets/images/personal2.png',
+      description: "Un bot Discord permettant aux utilisateurs l'intéraction avec un modèle de language large tournant en local via des requêtes API, intègre une mémoire conversationnelle liée à chaque utilisateur.",
+      technologies: ['Python', 'Large Language Models', 'Gestion API'],
     ),
     // const Project(
     //   id: 'personal3',
@@ -123,16 +121,19 @@ class _ProjectsPageState extends State<ProjectsPage> {
   }
 
   Widget _buildProjectGrid(BuildContext context, List<Project> projects) {
-    return Wrap(
-      alignment: WrapAlignment.spaceEvenly,
-      spacing: 16,
-      runSpacing: 32,
-      children: projects.map((project) {
-        return ProjectItem(
-          project: project,
-          onTap: () => _showProjectPopup(context, project),
-        );
-      }).toList(),
+    return SizedBox(
+      width: double.infinity, // Make the Wrap take up the full width
+      child: Wrap(
+        alignment: WrapAlignment.start, // or .spaceBetween, .spaceAround, etc.
+        spacing: 16,
+        runSpacing: 32,
+        children: projects.map((project) {
+          return ProjectItem(
+            project: project,
+            onTap: () => _showProjectPopup(context, project),
+          );
+        }).toList(),
+      ),
     );
   }
 }

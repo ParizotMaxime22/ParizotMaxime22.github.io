@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../models/project.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ProjectPopup extends StatelessWidget {
   final Project project;
@@ -65,7 +66,7 @@ class ProjectPopup extends StatelessWidget {
                   width: 250,
                   height: 250,
                   child: Image.asset(
-                    project.imageUrl,
+                    project.imageUrl.startsWith('assets/') ? project.imageUrl : 'assets/$project.imageUrl',
                     width: 250,
                     height: 250,
                     fit: BoxFit.cover,
@@ -104,7 +105,7 @@ class ProjectPopup extends StatelessWidget {
                     ),
                     const SizedBox(height: 16),
                     const Text(
-                      'Technologies:',
+                      'Technologies utilisées:',
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
@@ -124,11 +125,23 @@ class ProjectPopup extends StatelessWidget {
                     if (project.linkUrl != null) ...[
                       const SizedBox(height: 16),
                       ElevatedButton.icon(
-                        onPressed: () {
-                          // URL launching functionality would go here
+                        onPressed: () async {
+                          final url = project.linkUrl;
+                          if (url != null && await canLaunchUrl(Uri.parse(url))) {
+                            await launchUrl(
+                              Uri.parse(url),
+                              mode: LaunchMode.externalApplication, // This opens in a new tab/window if possible (such as on web)
+                            );
+                          } else {
+                            // Optionally show an error message
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(content: Text('Impossible d\'ouvrir le lien.')),
+                            );
+                          }
                         },
                         icon: const Icon(Icons.link),
-                        label: const Text('Visit Project'),
+                        label: const Text('Lien du Project'),
+
                       ),
                     ],
                   ],

@@ -312,15 +312,14 @@ class _ContactPageState extends State<ContactPage> {
                         width: formWidth,
                         height: formHeight,
                         decoration: BoxDecoration(
-                          color: Colors.red.withOpacity(0.1),
-                          border: Border.all(color: Colors.red, width: 3),
+                          color: Colors.black.withOpacity(0.1),
+                          border: Border.all(color: Colors.black45, width: 3),
                         ),
                         child: Stack(
                           children: [
                             // X mark
                             CustomPaint(
                               size: Size(formWidth, formHeight),
-                              painter: CrossPainter(),
                             ),
                             
                             // Message
@@ -372,30 +371,4 @@ class _ContactPageState extends State<ContactPage> {
       ),
     );
   }
-}
-
-// Custom painter for drawing the red cross
-class CrossPainter extends CustomPainter {
-  @override
-  void paint(Canvas canvas, Size size) {
-    final paint = Paint()
-      ..color = Colors.red
-      ..strokeWidth = 5
-      ..style = PaintingStyle.stroke;
-
-    canvas.drawLine(
-      Offset(0, 0),
-      Offset(size.width, size.height),
-      paint,
-    );
-    
-    canvas.drawLine(
-      Offset(size.width, 0),
-      Offset(0, size.height),
-      paint,
-    );
-  }
-
-  @override
-  bool shouldRepaint(CustomPainter oldDelegate) => false;
 }

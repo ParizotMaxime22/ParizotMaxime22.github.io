@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import '../../models/project.dart';
 
 class ProjectItem extends StatelessWidget {
@@ -13,6 +14,12 @@ class ProjectItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Make sure the image path starts with 'assets/' for consistency
+    String imageUrl = project.imageUrl;
+    if (!imageUrl.startsWith('assets/')) {
+      imageUrl = 'assets/$imageUrl';
+    }
+
     return InkWell(
       onTap: onTap,
       child: Column(
@@ -23,11 +30,28 @@ class ProjectItem extends StatelessWidget {
               width: 250,
               height: 250,
               child: Image.asset(
-                project.imageUrl,
+                imageUrl,
                 width: 250,
                 height: 250,
                 fit: BoxFit.cover,
                 errorBuilder: (context, error, stackTrace) {
+                  // If error occurs and this is web, try with an alternate path
+                  if (kIsWeb) {
+                    return Image.network(
+                      '${Uri.base.toString()}$imageUrl',
+                      width: 250,
+                      height: 250,
+                      fit: BoxFit.cover,
+                      errorBuilder: (context, error, stackTrace) {
+                        return Container(
+                          width: 250,
+                          height: 250,
+                          color: Colors.grey.shade300,
+                          child: const Icon(Icons.broken_image, size: 60),
+                        );
+                      },
+                    );
+                  }
                   return Container(
                     width: 250,
                     height: 250,
