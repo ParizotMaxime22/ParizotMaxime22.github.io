@@ -123,11 +123,11 @@ class _ContactPageState extends State<ContactPage> {
               ),
             ],
           ),
-          const SizedBox(height: 30),
-          Text(
-            'Ou utilisez le formulaire ci-dessous:',
-            style: Theme.of(context).textTheme.bodyLarge,
-          ),
+          // const SizedBox(height: 30),
+          // Text(
+          //   'Ou utilisez le formulaire ci-dessous:',
+          //   style: Theme.of(context).textTheme.bodyLarge,
+          // ),
 
           // Contact Form with Overlay
           // Stack(
