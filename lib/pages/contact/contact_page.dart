@@ -58,7 +58,7 @@ class _ContactPageState extends State<ContactPage> {
       scheme: 'mailto',
       path: 'parizot.maxime22@gmail.com',
       query:
-          'subject=${Uri.encodeComponent('Suite au visionnage de votre portfolio:')}',
+          'subject=${Uri.encodeComponent('Suite au visionnage de votre portfolio :')}',
     );
 
     if (!await launchUrl(emailUri)) {
@@ -86,7 +86,7 @@ class _ContactPageState extends State<ContactPage> {
           ),
           const SizedBox(height: 16),
           Text(
-            'Vous avez des questions ? Ou peut-être ai-je piquer votre intérêt ?',
+            'Vous avez des questions ? Ou peut-être ai-je piqué votre intérêt ?',
             style: Theme.of(context).textTheme.bodyLarge,
           ),
           Text(
@@ -130,243 +130,243 @@ class _ContactPageState extends State<ContactPage> {
           ),
 
           // Contact Form with Overlay
-          Stack(
-            children: [
-              // The original form card with a key to measure its size
-              Card(
-                key: _formCardKey,
-                elevation: 3,
-                child: Padding(
-                  padding: const EdgeInsets.all(20),
-                  child: Form(
-                    key: _formKey,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        Text(
-                          'Formulaire de Contact',
-                          style: Theme.of(context).textTheme.titleLarge,
-                        ),
-                        const SizedBox(height: 20),
-
-                        // Form Fields
-                        TextFormField(
-                          controller: _nameController,
-                          decoration: const InputDecoration(
-                            labelText: 'Prénom *',
-                            border: OutlineInputBorder(),
-                            prefixIcon: Icon(Icons.person),
-                          ),
-                          validator:
-                              (value) =>
-                                  value?.isEmpty ?? true
-                                      ? 'Veuillez saisir votre prénom'
-                                      : null,
-                        ),
-                        const SizedBox(height: 16),
-
-                        TextFormField(
-                          controller: _surnameController,
-                          decoration: const InputDecoration(
-                            labelText: 'Nom *',
-                            border: OutlineInputBorder(),
-                            prefixIcon: Icon(Icons.person_outline),
-                          ),
-                          validator:
-                              (value) =>
-                                  value?.isEmpty ?? true
-                                      ? 'Veuillez saisir votre nom'
-                                      : null,
-                        ),
-                        const SizedBox(height: 16),
-
-                        TextFormField(
-                          controller: _emailController,
-                          decoration: const InputDecoration(
-                            labelText: 'Email *',
-                            border: OutlineInputBorder(),
-                            prefixIcon: Icon(Icons.email),
-                          ),
-                          validator: (value) {
-                            if (value?.isEmpty ?? true) {
-                              return 'Veuillez saisir votre email';
-                            }
-                            if (!RegExp(
-                              r'^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$',
-                            ).hasMatch(value!)) {
-                              return 'Veuillez saisir une adresse email valide';
-                            }
-                            return null;
-                          },
-                        ),
-                        const SizedBox(height: 16),
-
-                        TextFormField(
-                          controller: _enterpriseController,
-                          decoration: const InputDecoration(
-                            labelText: 'Entreprise (Optionnel)',
-                            border: OutlineInputBorder(),
-                            prefixIcon: Icon(Icons.business),
-                          ),
-                        ),
-                        const SizedBox(height: 16),
-
-                        TextFormField(
-                          controller: _messageController,
-                          maxLines: 5,
-                          decoration: const InputDecoration(
-                            labelText: 'Message *',
-                            border: OutlineInputBorder(),
-                            prefixIcon: Icon(Icons.message),
-                            alignLabelWithHint: true,
-                          ),
-                          validator:
-                              (value) =>
-                                  value?.isEmpty ?? true
-                                      ? 'Veuillez saisir votre message'
-                                      : null,
-                        ),
-                        const SizedBox(height: 24),
-
-                        // Captcha Verification
-                        Center(
-                          child: Column(
-                            children: [
-                              SizedBox(
-                                height: 140,
-                                width: 650,
-                                child: CaptchaVerification(
-                                  textFieldDecoration: const InputDecoration(
-                                    border: OutlineInputBorder(),
-                                    hintText:
-                                        "Veuillez respecter les majuscules/minuscules.",
-                                  ),
-                                  labelText: "Êtes vous vraiment humain ?",
-                                  errorText: "",
-                                  onVerified: _onCaptchaVerified,
-                                  verifiedWidget: const Row(
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    children: [
-                                      Icon(Icons.verified),
-                                      SizedBox(width: 5),
-                                      Text("Vérifié"),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                              const SizedBox(height: 16),
-                              if (_captchaAttempted && !_captchaVerified)
-                                const Text(
-                                  'La vérification a échoué. Veuillez réessayer.',
-                                  style: TextStyle(color: Colors.red, fontSize: 14),
-                                ),
-                              const SizedBox(height: 16),
-                              ElevatedButton(
-                                onPressed: _captchaVerified ? _submitForm : null,
-                                style: ElevatedButton.styleFrom(
-                                  minimumSize: const Size(200, 50),
-                                  backgroundColor:
-                                      _captchaVerified
-                                          ? Theme.of(context).primaryColor
-                                          : Colors.grey,
-                                ),
-                                child: const Text(
-                                  'Envoyer',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 16,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              
+          // Stack(
+          //   children: [
+          //     // The original form card with a key to measure its size
+          //     Card(
+          //       key: _formCardKey,
+          //       elevation: 3,
+          //       child: Padding(
+          //         padding: const EdgeInsets.all(20),
+          //         child: Form(
+          //           key: _formKey,
+          //           child: Column(
+          //             crossAxisAlignment: CrossAxisAlignment.stretch,
+          //             children: [
+          //               Text(
+          //                 'Formulaire de Contact',
+          //                 style: Theme.of(context).textTheme.titleLarge,
+          //               ),
+          //               const SizedBox(height: 20),
+          //
+          //               // Form Fields
+          //               TextFormField(
+          //                 controller: _nameController,
+          //                 decoration: const InputDecoration(
+          //                   labelText: 'Prénom *',
+          //                   border: OutlineInputBorder(),
+          //                   prefixIcon: Icon(Icons.person),
+          //                 ),
+          //                 validator:
+          //                     (value) =>
+          //                         value?.isEmpty ?? true
+          //                             ? 'Veuillez saisir votre prénom'
+          //                             : null,
+          //               ),
+          //               const SizedBox(height: 16),
+          //
+          //               TextFormField(
+          //                 controller: _surnameController,
+          //                 decoration: const InputDecoration(
+          //                   labelText: 'Nom *',
+          //                   border: OutlineInputBorder(),
+          //                   prefixIcon: Icon(Icons.person_outline),
+          //                 ),
+          //                 validator:
+          //                     (value) =>
+          //                         value?.isEmpty ?? true
+          //                             ? 'Veuillez saisir votre nom'
+          //                             : null,
+          //               ),
+          //               const SizedBox(height: 16),
+          //
+          //               TextFormField(
+          //                 controller: _emailController,
+          //                 decoration: const InputDecoration(
+          //                   labelText: 'Email *',
+          //                   border: OutlineInputBorder(),
+          //                   prefixIcon: Icon(Icons.email),
+          //                 ),
+          //                 validator: (value) {
+          //                   if (value?.isEmpty ?? true) {
+          //                     return 'Veuillez saisir votre email';
+          //                   }
+          //                   if (!RegExp(
+          //                     r'^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$',
+          //                   ).hasMatch(value!)) {
+          //                     return 'Veuillez saisir une adresse email valide';
+          //                   }
+          //                   return null;
+          //                 },
+          //               ),
+          //               const SizedBox(height: 16),
+          //
+          //               TextFormField(
+          //                 controller: _enterpriseController,
+          //                 decoration: const InputDecoration(
+          //                   labelText: 'Entreprise (Optionnel)',
+          //                   border: OutlineInputBorder(),
+          //                   prefixIcon: Icon(Icons.business),
+          //                 ),
+          //               ),
+          //               const SizedBox(height: 16),
+          //
+          //               TextFormField(
+          //                 controller: _messageController,
+          //                 maxLines: 5,
+          //                 decoration: const InputDecoration(
+          //                   labelText: 'Message *',
+          //                   border: OutlineInputBorder(),
+          //                   prefixIcon: Icon(Icons.message),
+          //                   alignLabelWithHint: true,
+          //                 ),
+          //                 validator:
+          //                     (value) =>
+          //                         value?.isEmpty ?? true
+          //                             ? 'Veuillez saisir votre message'
+          //                             : null,
+          //               ),
+          //               const SizedBox(height: 24),
+          //
+          //               // Captcha Verification
+          //               Center(
+          //                 child: Column(
+          //                   children: [
+          //                     SizedBox(
+          //                       height: 140,
+          //                       width: 650,
+          //                       child: CaptchaVerification(
+          //                         textFieldDecoration: const InputDecoration(
+          //                           border: OutlineInputBorder(),
+          //                           hintText:
+          //                               "Veuillez respecter les majuscules/minuscules.",
+          //                         ),
+          //                         labelText: "Êtes vous vraiment humain ?",
+          //                         errorText: "",
+          //                         onVerified: _onCaptchaVerified,
+          //                         verifiedWidget: const Row(
+          //                           mainAxisAlignment: MainAxisAlignment.start,
+          //                           children: [
+          //                             Icon(Icons.verified),
+          //                             SizedBox(width: 5),
+          //                             Text("Vérifié"),
+          //                           ],
+          //                         ),
+          //                       ),
+          //                     ),
+          //                     const SizedBox(height: 16),
+          //                     if (_captchaAttempted && !_captchaVerified)
+          //                       const Text(
+          //                         'La vérification a échoué. Veuillez réessayer.',
+          //                         style: TextStyle(color: Colors.red, fontSize: 14),
+          //                       ),
+          //                     const SizedBox(height: 16),
+          //                     ElevatedButton(
+          //                       onPressed: _captchaVerified ? _submitForm : null,
+          //                       style: ElevatedButton.styleFrom(
+          //                         minimumSize: const Size(200, 50),
+          //                         backgroundColor:
+          //                             _captchaVerified
+          //                                 ? Theme.of(context).primaryColor
+          //                                 : Colors.grey,
+          //                       ),
+          //                       child: const Text(
+          //                         'Envoyer',
+          //                         style: TextStyle(
+          //                           color: Colors.white,
+          //                           fontSize: 16,
+          //                         ),
+          //                       ),
+          //                     ),
+          //                   ],
+          //                 ),
+          //               ),
+          //             ],
+          //           ),
+          //         ),
+          //       ),
+          //     ),
+          //
               // Red Cross Overlay using LayoutBuilder to match form size
-              LayoutBuilder(
-                builder: (context, constraints) {
-                  // Get the RenderBox of the form card
-                  final RenderBox? renderBox = _formCardKey.currentContext?.findRenderObject() as RenderBox?;
-                  
-                  // Default size in case the form isn't rendered yet
-                  double formWidth = constraints.maxWidth;
-                  double formHeight = 700; // Fallback height
-                  
-                  // If the form is rendered, use its actual size
-                  if (renderBox != null) {
-                    formWidth = renderBox.size.width;
-                    formHeight = renderBox.size.height;
-                  }
-                  
-                  return Card(
-                    elevation: 5,
-                    margin: EdgeInsets.zero,
-                    color: Colors.transparent,
-                    child: ClipRect(
-                      child: Container(
-                        width: formWidth,
-                        height: formHeight,
-                        decoration: BoxDecoration(
-                          color: Colors.black.withOpacity(0.1),
-                          border: Border.all(color: Colors.black45, width: 3),
-                        ),
-                        child: Stack(
-                          children: [
-                            // X mark
-                            CustomPaint(
-                              size: Size(formWidth, formHeight),
-                            ),
-                            
-                            // Message
-                            Center(
-                              child: Container(
-                                padding: const EdgeInsets.all(20),
-                                color: Colors.white.withOpacity(0.9),
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    const Icon(
-                                      Icons.warning_amber_rounded,
-                                      color: Colors.red,
-                                      size: 50,
-                                    ),
-                                    const SizedBox(height: 16),
-                                    const Text(
-                                      "Ce formulaire n'est pas disponible pour le moment, celui-ci sera utilisable à l'avenir. Veuillez me contacter par email pour le moment.",
-                                      style: TextStyle(
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                      textAlign: TextAlign.center,
-                                    ),
-                                    const SizedBox(height: 16),
-                                    ElevatedButton.icon(
-                                      onPressed: _launchEmail,
-                                      icon: const Icon(Icons.email),
-                                      label: const Text('Envoyer un email'),
-                                      style: ElevatedButton.styleFrom(
-                                        backgroundColor: Colors.blue,
-                                        foregroundColor: Colors.white,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  );
-                },
-              ),
-            ],
-          ),
+              // LayoutBuilder(
+              //   builder: (context, constraints) {
+              //     // Get the RenderBox of the form card
+              //     final RenderBox? renderBox = _formCardKey.currentContext?.findRenderObject() as RenderBox?;
+              //
+              //     // Default size in case the form isn't rendered yet
+              //     double formWidth = constraints.maxWidth;
+              //     double formHeight = 700; // Fallback height
+              //
+              //     // If the form is rendered, use its actual size
+              //     if (renderBox != null) {
+              //       formWidth = renderBox.size.width;
+              //       formHeight = renderBox.size.height;
+              //     }
+              //
+              //     return Card(
+              //       elevation: 5,
+              //       margin: EdgeInsets.zero,
+              //       color: Colors.transparent,
+              //       child: ClipRect(
+              //         child: Container(
+              //           width: formWidth,
+              //           height: formHeight,
+              //           decoration: BoxDecoration(
+              //             color: Colors.black.withOpacity(0.1),
+              //             border: Border.all(color: Colors.black45, width: 3),
+              //           ),
+              //           child: Stack(
+              //             children: [
+              //               // X mark
+              //               CustomPaint(
+              //                 size: Size(formWidth, formHeight),
+              //               ),
+              //
+              //               // Message
+              //               Center(
+              //                 child: Container(
+              //                   padding: const EdgeInsets.all(20),
+              //                   color: Colors.white.withOpacity(0.9),
+              //                   child: Column(
+              //                     mainAxisSize: MainAxisSize.min,
+              //                     children: [
+              //                       const Icon(
+              //                         Icons.warning_amber_rounded,
+              //                         color: Colors.red,
+              //                         size: 50,
+              //                       ),
+              //                       const SizedBox(height: 16),
+              //                       const Text(
+              //                         "Ce formulaire n'est pas disponible pour le moment, celui-ci sera utilisable à l'avenir. Veuillez me contacter par email pour le moment.",
+              //                         style: TextStyle(
+              //                           fontSize: 18,
+              //                           fontWeight: FontWeight.bold,
+              //                         ),
+              //                         textAlign: TextAlign.center,
+              //                       ),
+              //                       const SizedBox(height: 16),
+              //                       ElevatedButton.icon(
+              //                         onPressed: _launchEmail,
+              //                         icon: const Icon(Icons.email),
+              //                         label: const Text('Envoyer un email'),
+              //                         style: ElevatedButton.styleFrom(
+              //                           backgroundColor: Colors.blue,
+              //                           foregroundColor: Colors.white,
+              //                         ),
+              //                       ),
+              //                     ],
+              //                   ),
+              //                 ),
+              //               ),
+              //             ],
+              //           ),
+              //         ),
+              //       ),
+              //     );
+              //   },
+              // ),
+            // ],
+          // ),
         ],
       ),
     );

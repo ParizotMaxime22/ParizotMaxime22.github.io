@@ -61,7 +61,7 @@ flutter:
   assets:
     - assets/
     - assets/profile_picture.png
-    - assets/cv.png
+    - assets/cv_maxime_parizot.png
     - assets/images/
     - assets/images/project1.jpg
     - assets/images/personal1.jpg

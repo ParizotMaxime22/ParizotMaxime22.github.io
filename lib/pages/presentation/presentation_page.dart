@@ -1,4 +1,6 @@
-import 'package:flutter/foundation.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
+import 'dart:ui' as ui;
+import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
 
 class PresentationPage extends StatelessWidget {
@@ -19,29 +21,29 @@ class PresentationPage extends StatelessWidget {
           const SizedBox(height: 24),
 
           // Profile Picture
-          Center(
-            child: Container(
-              width: 200,
-              height: 200,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withAlpha(50),
-                    spreadRadius: 2,
-                    blurRadius: 5,
-                    offset: const Offset(0, 3),
-                  ),
-                ],
-              ),
-              child: ClipOval(
-                child: Image.asset(
-                  'assets/profile_picture.png', // Make sure to add your image to assets
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-          ),
+          // Center(
+          //   child: Container(
+          //     width: 200,
+          //     height: 200,
+          //     decoration: BoxDecoration(
+          //       shape: BoxShape.circle,
+          //       boxShadow: [
+          //         BoxShadow(
+          //           color: Colors.black.withAlpha(50),
+          //           spreadRadius: 2,
+          //           blurRadius: 5,
+          //           offset: const Offset(0, 3),
+          //         ),
+          //       ],
+          //     ),
+          //     child: ClipOval(
+          //       child: Image.asset(
+          //         'assets/profile_picture.png', // Make sure to add your image to assets
+          //         fit: BoxFit.cover,
+          //       ),
+          //     ),
+          //   ),
+          // ),
           const SizedBox(height: 32),
 
           // Introduction Text
@@ -64,48 +66,85 @@ class PresentationPage extends StatelessWidget {
                 ),
                 WidgetSpan(child: SizedBox(height: 35,)),
                 TextSpan(text: "Le monde du développement est pour moi une opportunité de m’épanouir dans un domaine qui m’a toujours intéressé : l’informatique et la technologie.\n"
-                    "Ce choix n’a pas été une simple décision d’opportunisme, mais une véritable tentative de renouer avec mon objectif de toujours que je n’ai pu atteindre à la suite de difficultés scolaires et personnel lors de mon enfance.\n"),
+                    "Ce choix n’a pas été une simple décision d’opportunisme, mais une véritable tentative de renouer avec mon objectif de toujours que je n’ai pu atteindre à la suite de difficultés scolaires et personnelles lors de mon enfance.\n"),
                 WidgetSpan(child: SizedBox(height: 35,)),
                 TextSpan(text:
                 "Il m’a fallu pour cela faire mes preuves face à d’autres candidats mieux qualifiés que moi, prouver la force de ma motivation et de mon envie de réussir.\n"),
                 WidgetSpan(child: SizedBox(height: 35,)),
                 TextSpan(text:
-                "Je ne peux prétendre avoir des années d’expérience derrière moi, ou avoir fait des grandes études dans les écoles supérieures, mais je peux vous assurer avoir en moi une capacité d’apprentissage et une persévérance à toute épreuve pour atteindre mon plein potentiel.")
+                "Je ne peux prétendre avoir des années d’expérience derrière moi, ou avoir fait de grandes études dans les écoles supérieures, mais je peux vous assurer avoir en moi une capacité d’apprentissage et une persévérance à toute épreuve pour atteindre mon plein potentiel.")
               ],
             ),
           ),
           const SizedBox(height: 40),
 
           // CV Section
-          Text("Mon CV version numérique",style: Theme.of(context).textTheme.headlineSmall,),
-          Center(
-            child: Container(
-              constraints: const BoxConstraints(
-                maxWidth: 800,
-                maxHeight: 1132, // or an appropriate height for your CV image aspect
+          Text("Mon CV version numérique", style: Theme.of(context).textTheme.headlineSmall,),
+LayoutBuilder(
+  builder: (context, constraints) {
+    // Compute image dimensions as before
+    final double imageWidth = constraints.maxWidth.clamp(0, 800);
+    final double imageHeight = constraints.maxHeight.clamp(0, 1132);
+    final double imageAspect = 800 / 1132;
+    double displayWidth = imageWidth;
+    double displayHeight = imageWidth / imageAspect;
+    if (displayHeight > imageHeight) {
+      displayHeight = imageHeight;
+      displayWidth = imageHeight * imageAspect;
+    }
+    // Dynamic spacing: 5% of image height, min 10, max 40 (feel free to tune)
+    final double spacing = displayHeight * 0.05;
+    final double dynamicSpacing = spacing.clamp(10.0, 40.0);
+
+    return Column(
+      children: [
+        SizedBox(height: dynamicSpacing),
+        Center(
+          child: Stack(
+            alignment: Alignment.center,
+            children: [
+              Container(
+                width: displayWidth,
+                height: displayHeight,
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withAlpha(80),
+                      spreadRadius: 0,
+                      blurRadius: 20,
+                      offset: const Offset(0, 6),
+                    ),
+                  ],
+                ),
               ),
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withAlpha(150),
-                    spreadRadius: 5,
-                    blurRadius: 10,
-                    offset: const Offset(0, 10),
-                  ),
-                ],
-              ),
-              child: kIsWeb
-                  ? const SizedBox(
-                width: 800,
-                height: 1132, // match the constraints above
-                child: HtmlElementView(viewType: 'cv-image'),
-              )
-                  : Image.asset(
-                'assets/cv.png',
-                fit: BoxFit.contain,
-              ),
-            ),
+              (() {
+  // ...your sizing code
+
+  if (kIsWeb) {
+    return SizedBox(
+      width: displayWidth,
+      height: displayHeight,
+      child: HtmlElementView(viewType: 'cv-image'),
+    );
+  } else {
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(0),
+      child: Image.asset(
+        'assets/cv_maxime_parizot.png',
+        width: displayWidth,
+        height: displayHeight,
+        fit: BoxFit.fill,
+      ),
+    );
+  }
+})(),
+            ],
           ),
+        ),
+      ],
+    );
+  },
+),
 
           const SizedBox(height: 20),
         ],

@@ -27,25 +27,25 @@ class ProjectItem extends StatelessWidget {
           ClipRRect(
             borderRadius: BorderRadius.circular(8.0),
             child: SizedBox(
-              width: 250,
-              height: 250,
+              width: 350,
+              height: 350,
               child: Image.asset(
                 imageUrl,
-                width: 250,
-                height: 250,
+                width: 350,
+                height: 350,
                 fit: BoxFit.cover,
                 errorBuilder: (context, error, stackTrace) {
                   // If error occurs and this is web, try with an alternate path
                   if (kIsWeb) {
                     return Image.network(
                       '${Uri.base.toString()}$imageUrl',
-                      width: 250,
-                      height: 250,
+                      width: 350,
+                      height: 350,
                       fit: BoxFit.cover,
                       errorBuilder: (context, error, stackTrace) {
                         return Container(
-                          width: 250,
-                          height: 250,
+                          width: 350,
+                          height: 350,
                           color: Colors.grey.shade300,
                           child: const Icon(Icons.broken_image, size: 60),
                         );
@@ -53,8 +53,8 @@ class ProjectItem extends StatelessWidget {
                     );
                   }
                   return Container(
-                    width: 250,
-                    height: 250,
+                    width: 350,
+                    height: 350,
                     color: Colors.grey.shade300,
                     child: const Icon(Icons.broken_image, size: 60),
                   );
@@ -75,13 +75,13 @@ class ProjectItem extends StatelessWidget {
           ),
           const SizedBox(height: 4),
           SizedBox(
-            width: 250,
+            width: 350,
             child: Text(
               project.description.length > 25 
                 ? '${project.description.substring(0, 150)}...'
                 : project.description,
               style: TextStyle(
-                fontSize: 12,
+                fontSize: 15,
                 color: Colors.grey[700],
               ),
               textAlign: TextAlign.center,

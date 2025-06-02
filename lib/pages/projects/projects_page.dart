@@ -16,7 +16,7 @@ class _ProjectsPageState extends State<ProjectsPage> {
       id: 'p1',
       name: 'MeetBiak',
       imageUrl: 'assets/images/project1.jpg',
-      description: "Une application sociale dédiée aux fan de K-Pop offrant une mise en relation via un système de swipe ainsi qu'une librairie d'idoles et groupes d'artistes, et une page affichant les dernières news sur le thème de la K-Pop.\nCréer et développé par Clément Romond.",
+      description: "Une application sociale dédiée aux fans de K-Pop offrant une mise en relation via un système de swipe ainsi qu'une librairie d'idoles et groupes d'artistes, et une page affichant les dernières news sur le thème de la K-Pop.\nCréer et développée par Clément Romond.",
       technologies: ['Flutter', 'Firebase', 'Dart'],
       linkUrl: 'https://meetbiak.webflow.io/',
       screenshots: [
@@ -58,7 +58,7 @@ class _ProjectsPageState extends State<ProjectsPage> {
       id: 'personal1',
       name: 'PocketPantryChef',
       imageUrl: 'assets/images/personal1.jpg',
-      description: "Ma propre application mobile permettant la gestion des ingrédients disponibles chez soit, la recherche de recettes en fonctions de ceux ci, la gestion de sa liste de courses, et enfin l'aide d'un 'chef virtuel' tournant sous Gemini.",
+      description: "Ma propre application mobile permettant la gestion des ingrédients disponibles chez soi, la recherche de recettes en fonction de ceux-ci, la gestion de sa liste de courses, et enfin l'aide d'un 'chef virtuel' tournant sous Gemini.",
       technologies: ['Flutter', 'SQLite', 'Firebase', 'Dart'],
       screenshots: [
         'assets/images/screenshots/personal1/screen1.png',
@@ -73,15 +73,15 @@ class _ProjectsPageState extends State<ProjectsPage> {
         'assets/images/screenshots/personal1/screen10.png',
       ],
     ),
-    const Project(
-      id: 'personal2',
-      name: "Whitecrow's Scuffed bot",
-      imageUrl: 'assets/images/personal2.png',
-      description: "Un bot Discord permettant aux utilisateurs l'intéraction avec un modèle de language large tournant en local via des requêtes API, intègre une mémoire conversationnelle liée à chaque utilisateur.",
-      technologies: ['Python', 'Large Language Models', 'Gestion API'],
-      screenshots: [
-      ],
-    ),
+    // const Project(
+    //   id: 'personal2',
+    //   name: "Whitecrow's Scuffed bot",
+    //   imageUrl: 'assets/images/personal2.png',
+    //   description: "Un bot Discord permettant aux utilisateurs l'intéraction avec un modèle de langage large tournant en local via des requêtes API, intègre une mémoire conversationnelle liée à chaque utilisateur.",
+    //   technologies: ['Python', 'Large Language Models', 'Gestion API'],
+    //   screenshots: [
+    //   ],
+    // ),
     // const Project(
     //   id: 'personal3',
     //   name: 'Personal Project Three',
@@ -121,7 +121,7 @@ class _ProjectsPageState extends State<ProjectsPage> {
           
           // Participated projects section
           Text(
-            'Projets auquel j\'ai participé:',
+            'Projets auxquels j\'ai participé:',
             style: Theme.of(context).textTheme.titleLarge,
           ),
           const SizedBox(height: 16),
@@ -131,7 +131,7 @@ class _ProjectsPageState extends State<ProjectsPage> {
           
           // Personal projects section
           Text(
-            'Projets personnel:',
+            'Projets personnels:',
             style: Theme.of(context).textTheme.titleLarge,
           ),
           const SizedBox(height: 16),
