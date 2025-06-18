@@ -332,7 +332,7 @@ aED(){var s,r=A.dP().b
 if(r==null)s=null
 else{r=r.canvasKitVariant
 if(r==null)r=null
-s=r}r=A.aHk(A.aza(B.EE,s==null?"auto":s))
+s=r}r=A.aHk(A.aza(B.EF,s==null?"auto":s))
 return new A.ad(r,new A.aiP(),A.W(r).h("ad<1,D>"))},
 aGy(a,b){return b+a},
 Tq(){var s=0,r=A.L(t.e),q,p,o,n,m
@@ -17866,7 +17866,7 @@ r.toString
 A.eC(r)
 q=a.j(0,"swipeEdge")
 q.toString
-return new A.Im(s,r,B.Ey[A.cm(q)])},
+return new A.Im(s,r,B.Ez[A.cm(q)])},
 zh:function zh(a,b){this.a=a
 this.b=b},
 Im:function Im(a,b,c){this.a=a
@@ -19891,7 +19891,7 @@ q=b.as
 if(a.as!==q)return q?-1:1
 return 0},
 az0(a,b){var s=A.W(b).h("ad<1,cW>")
-return A.ayl(!0,A.a2(new A.ad(b,new A.XF(),s),!0,s.h("at.E")),a,B.EU,!0,B.Bw,null)},
+return A.ayl(!0,A.a2(new A.ad(b,new A.XF(),s),!0,s.h("at.E")),a,B.EV,!0,B.Bw,null)},
 ayZ(a){a.bz()
 a.aW(A.atT())},
 vZ(a){var s=a.a,r=s instanceof A.n_?s:null
@@ -20452,7 +20452,7 @@ _.as=!0
 _.at=!1
 _.$ti=d},
 a_y(a,b){var s
-if(a.i(0,b))return new A.F3(B.F_)
+if(a.i(0,b))return new A.F3(B.F0)
 s=A.b([],t.fJ)
 A.bf("debugDidFindAncestor")
 a.kK(new A.a_z(b,A.aw(t.u),s))
@@ -26801,7 +26801,7 @@ U7(){var s=this.Q
 s===$&&A.a()
 return s},
 Gp(a,b,c,d){var s,r,q,p
-if(a<0||b<0)return B.EZ
+if(a<0||b<0)return B.F_
 s=this.a
 s===$&&A.a()
 s=s.a
@@ -26820,7 +26820,7 @@ l.push(new A.ec(n[0],n[1],n[2],n[3],B.iH[m]))}return l},
 cS(a){var s,r=this.a
 r===$&&A.a()
 r=r.a.getGlyphPositionAtCoordinate(a.a,a.b)
-s=B.Ez[B.c.ac(r.affinity.value)]
+s=B.EA[B.c.ac(r.affinity.value)]
 return new A.a6(B.c.ac(r.pos),s)},
 U9(a){var s=this.a
 s===$&&A.a()
@@ -30114,14 +30114,14 @@ a2s(){var s=this,r=s.r
 if(r==null){r=s.r=new A.um(s.c)
 r.d=new A.Y8(s)}return r},
 SY(a){var s,r=this
-if(B.b.t(B.EG,a.type)){s=r.a2s()
+if(B.b.t(B.EH,a.type)){s=r.a2s()
 s.toString
 s.sDJ(r.c.$0().A0(5e5))
 if(r.f!==B.lW){r.f=B.lW
 r.M_()}}return r.d.a.V7(a)},
 M_(){var s,r
 for(s=this.w,r=0;r<s.length;++r)s[r].$1(this.f)},
-V6(a){if(B.b.t(B.EN,a))return this.f===B.fh
+V6(a){if(B.b.t(B.EO,a))return this.f===B.fh
 return!1}}
 A.Y9.prototype={
 $0(){return new A.f9(Date.now(),0,!1)},
@@ -35430,7 +35430,7 @@ if(o>0)return s
 return null}}
 A.abP.prototype={
 E(a,b){this.Jx(b,0,b.length,!1)},
-bD(){this.Jx(B.EQ,0,0,!0)}}
+bD(){this.Jx(B.ER,0,0,!0)}}
 A.aip.prototype={
 Jx(a,b,c,d){var s=this.b.aeV(a,b,c,d)
 if(s!=null)this.a.ms(s,0,s.length,d)}}
@@ -38270,7 +38270,7 @@ r=A.lf(B.HE,B.e,r==null?1:r)
 r.toString
 p=o.af(p.gv())
 if(p==null)p=1
-p=A.aqD(q,B.u,new A.qy(p,B.Ex,new A.cC(B.yA,this.e)),s,1,B.Lp)
+p=A.aqD(q,B.u,new A.qy(p,B.Ey,new A.cC(B.yA,this.e)),s,1,B.Lp)
 return new A.oF(A.nC(r.a,r.b,0),q,!0,q,p,q)}}
 A.Du.prototype={
 l(){var s=this,r=s.cE$
@@ -41702,7 +41702,7 @@ n=o.e
 o=o.cx
 r=q.ga6r()
 q.a.toString
-return new A.zZ(p,p,p,new A.af1(),p,p,p,p,p,n,B.H0,p,p,p,B.F2,q.ga6x(),o,p,B.Oe,s,p,r,p,p,B.md,!1,!1,p,p,p,new A.na(q,t.bT))},
+return new A.zZ(p,p,p,new A.af1(),p,p,p,p,p,n,B.H0,p,p,p,B.F3,q.ga6x(),o,p,B.Oe,s,p,r,p,p,B.md,!1,!1,p,p,p,new A.na(q,t.bT))},
 L(a){var s,r=null,q=A.n1(!1,!1,this.a_x(a),r,r,r,r,!0,r,r,r,new A.af2(),r,r)
 this.a.toString
 s=this.d
@@ -41996,7 +41996,7 @@ A.tb.prototype={
 H(){return"_CornerId."+this.b}}
 A.k7.prototype={}
 A.qz.prototype={
-jU(){var s,r,q=this,p=A.aFP(B.EK,new A.a3_(q,q.b.gaZ().N(0,q.a.gaZ()))),o=q.a
+jU(){var s,r,q=this,p=A.aFP(B.EL,new A.a3_(q,q.b.gaZ().N(0,q.a.gaZ()))),o=q.a
 o.toString
 s=p.a
 o=q.nP(o,s)
@@ -44986,7 +44986,7 @@ r.e=s.a.a
 r.f=s.d},
 $S:0}
 A.Ht.prototype={
-L(a){return A.aqD(new A.mH(B.AT,null,null),B.O,new A.qy(1,B.F7,new A.cC(B.yz,B.q)),this.c.P(0,new A.h(0,40.95)),1.25,B.Lq)}}
+L(a){return A.aqD(new A.mH(B.AT,null,null),B.O,new A.qy(1,B.F8,new A.cC(B.yz,B.q)),this.c.P(0,new A.h(0,40.95)),1.25,B.Lq)}}
 A.nz.prototype={
 H(){return"MaterialType."+this.b}}
 A.x4.prototype={
@@ -45357,7 +45357,7 @@ giw(){return A.aHX()},
 PE(a,b,c,d,e,f){return A.ay4(a,b,c,d,e,f)}}
 A.I3.prototype={
 a_3(a){var s=t.Tr
-return A.a2(new A.ad(B.EJ,new A.a4o(a),s),!0,s.h("at.E"))},
+return A.a2(new A.ad(B.EK,new A.a4o(a),s),!0,s.h("at.E"))},
 i(a,b){if(b==null)return!1
 if(this===b)return!0
 if(J.R(b)!==A.v(this))return!1
@@ -50008,7 +50008,7 @@ return new A.nb(r.a.cc(s.ghm()),r.b,r.c)},
 cS(a){var s=this.b
 return s.a.c.cS(a.N(0,s.ghm()))},
 rA(){var s,r,q=this.b,p=q.ghm()
-if(!isFinite(p.a)||!isFinite(p.b))return B.F1
+if(!isFinite(p.a)||!isFinite(p.b))return B.F2
 s=q.f
 if(s==null){s=q.a.c.rA()
 q.f=s}if(p.i(0,B.e))r=s
@@ -58844,7 +58844,7 @@ break
 case 1:return A.J(q,r)}})
 return A.K($async$Be,r)},
 a2d(a,b){var s,r,q,p
-if(a===b)return B.EY
+if(a===b)return B.EZ
 s=A.b([],t.QP)
 if(a==null)s.push(b)
 else{r=B.b.kp(B.dF,a)
@@ -60700,7 +60700,7 @@ A.jK.prototype={}
 A.Is.prototype={
 kt(a,b){var s,r,q,p,o,n=$.a_.a9$.d.c
 if(n==null||n.e==null)return!1
-for(s=t.v,r=0;r<2;++r){q=B.EO[r]
+for(s=t.v,r=0;r<2;++r){q=B.EP[r]
 p=n.e
 p.toString
 o=A.akw(p,q,s)
@@ -60810,7 +60810,7 @@ this.jY()}}
 A.t8.prototype={
 k(a){return"Entry#"+A.bg(this)+"("+this.d.k(0)+")"}}
 A.ut.prototype={
-al(){return new A.Lm(A.aw(t.me),B.EV,null,null)},
+al(){return new A.Lm(A.aw(t.me),B.EW,null,null)},
 akx(a,b){return A.atB().$2(a,b)},
 ahD(a,b){return A.aGe().$2(a,b)}}
 A.Lm.prototype={
@@ -63074,7 +63074,7 @@ h.CH()
 r=h.ga2U()
 q=q.lm
 h.e!==$&&A.bh()
-h.e=new A.JD(s,new A.bN(B.GO,l),new A.nv(),p,B.bE,0,k,h.ga4X(),h.ga4Z(),r,B.bE,0,j,h.ga4R(),h.ga4T(),r,i,B.F0,f,g.CW,g.cx,g.cy,o,g,n,m,g.x,q,new A.Fw(),new A.Fw())
+h.e=new A.JD(s,new A.bN(B.GO,l),new A.nv(),p,B.bE,0,k,h.ga4X(),h.ga4Z(),r,B.bE,0,j,h.ga4R(),h.ga4T(),r,i,B.F1,f,g.CW,g.cx,g.cy,o,g,n,m,g.x,q,new A.Fw(),new A.Fw())
 return h},
 v5(a,b){var s,r,q,p=this,o=p.a.c,n=o.a.a.length
 if(n<a.b||n<a.a)return
@@ -66373,7 +66373,7 @@ if(b==null)return!1
 if(J.R(b)!==A.v(s))return!1
 return b instanceof A.de&&b.a===s.a&&b.b===s.b&&b.c==s.c&&b.d===s.d&&A.cA(null,null)},
 gA(a){var s=this
-return A.P(s.a,s.b,s.c,s.d,A.bF(B.ER),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
+return A.P(s.a,s.b,s.c,s.d,A.bF(B.ES),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 k(a){return"IconData(U+"+B.d.tM(B.i.lO(this.a,16).toUpperCase(),5,"0")+")"}}
 A.nh.prototype={
 cm(a){return!this.w.i(0,a.w)},
@@ -67664,7 +67664,7 @@ g=s&&d
 b=s?d:b.ch
 if(b==null)b=B.dV
 s=s&&d
-f=new A.xa(a1,a,q,p,l,o,n,a0,g===!0,m,k,h,c,j,i,b,new A.pY(d),B.EW,s===!0)
+f=new A.xa(a1,a,q,p,l,o,n,a0,g===!0,m,k,h,c,j,i,b,new A.pY(d),B.EX,s===!0)
 if(!f.i(0,e.e))e.ak(new A.afj(e,f))},
 DV(){this.r5()},
 Qs(){if(this.d==null)this.r5()},
@@ -67994,7 +67994,7 @@ r.W(0,s.Tn(null,l))
 l.a.toString
 q=r.a
 p=0
-for(;!1;++p){o=B.ES[p]
+for(;!1;++p){o=B.ET[p]
 n=l.c
 n.toString
 m=new A.fB(o.DE(n),null,!0,B.kg,B.bu,new A.p6(new ($.TI())(B.bu)),B.bu)
@@ -68346,7 +68346,7 @@ L(a){var s,r,q=this,p=null,o=q.ga4u(),n=A.kP(a),m=q.bX$,l=q.d
 l===$&&A.a()
 s=q.a.ax
 if(l.gJ()==null){r=q.gIB()
-r=J.qn(r.slice(0),A.W(r).c)}else r=B.ET
+r=J.qn(r.slice(0),A.W(r).c)}else r=B.EU
 return new A.ne(p,new A.cI(new A.a3W(q,a),A.qu(B.b8,new A.Eq(!1,A.al9(A.n1(!0,p,A.aaE(m,new A.qI(r,s,l)),p,p,p,q.y,!1,p,p,p,p,p,!0),n),p),p,o,q.ga6X(),p,p,o),p,t.w3),p)}}
 A.a3V.prototype={
 $1(a){var s=this.a.c
@@ -73661,7 +73661,7 @@ r.wh()
 return s.aU()},
 l(){var s,r,q,p,o=this
 for(s=o.b,r=s.length,q=o.gBi(),p=0;p<s.length;s.length===r||(0,A.H)(s),++p)s[p].G(q)
-o.b=B.EX
+o.b=B.EY
 o.y=!1
 o.e2()},
 dA(a,b){return a.lg(b)},
@@ -77974,7 +77974,7 @@ if(a===s.d)return
 s.ak(new A.afs(s,a))
 s.qV(a)},
 L(a){var s=null,r=A.rI(s,A.aol(B.X,B.Ak,s,B.kU,B.At,B.kU,B.l),"Roboto",!0),q=this.d
-return new A.x5(new A.Ik(q,this.ga6V(),new A.H0(q,B.EI,s),s),"Portfolio de Maxime Parizot",r,!1,s)}}
+return new A.x5(new A.Ik(q,this.ga6V(),new A.H0(q,B.EJ,s),s),"Portfolio de Maxime Parizot",r,!1,s)}}
 A.afr.prototype={
 $0(){var s=A.f3(this.b.a.j(0,"currentPageIndex"))
 if(s==null)s=0
@@ -78014,7 +78014,7 @@ L(a){var s=null,r=A.dA("Me contacter",s,s,A.X(a).p1.e,s),q=A.dA("Vous avez des q
 return A.a8R(A.j8(A.b([r,B.cq,q,p,B.cq,A.lz(A.b([A.ib(s,A.ld(new A.oF(A.nB(o,1,1),B.N,!0,s,B.CI,s),B.bD,s,s,s,s),B.Y,!1,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,this.ga6f(),s,s,s,s,s,s,!1,B.bc),B.Ls,new A.yO("parizot.maxime22@gmail.com",A.iH(s,s,A.X(a).dy,s,B.jN,s,s,s,s,s,s,16,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s)],n),B.ae,B.ag,B.at)],n),B.bl,B.ag,B.at),B.f1)}}
 A.Io.prototype={
 L(a){var s=null,r=A.dA("Maxime Parizot",s,s,A.X(a).p1.e,s),q=A.X(a).p1.y
-return A.a8R(A.j8(A.b([r,B.jH,B.jI,A.J9(s,s,s,B.bX,s,s,!0,s,A.cr(B.Fc,A.iH(s,s,q==null?s:q.b,s,s,s,s,s,s,s,s,18,s,s,s,s,1.5,!0,s,s,s,s,s,s,s,s),s),B.av,s,s,B.V,B.aq),B.Lx,A.dA("Mon CV version num\xe9rique",s,s,A.X(a).p1.f,s),new A.nq(new A.a4Z(),s),B.Lv],t.E),B.ae,B.ag,B.at),B.f1)}}
+return A.a8R(A.j8(A.b([r,B.jH,B.jI,A.J9(s,s,s,B.bX,s,s,!0,s,A.cr(B.Ep,A.iH(s,s,q==null?s:q.b,s,s,s,s,s,s,s,s,18,s,s,s,s,1.5,!0,s,s,s,s,s,s,s,s),s),B.av,s,s,B.V,B.aq),B.Lx,A.dA("Mon CV version num\xe9rique",s,s,A.X(a).p1.f,s),new A.nq(new A.a4Z(),s),B.Lv],t.E),B.ae,B.ag,B.at),B.f1)}}
 A.a4Z.prototype={
 $2(a,b){var s,r,q,p,o=null,n={},m=B.c.dT(b.b,0,800),l=B.c.dT(b.d,0,1132)
 n.a=m
@@ -80797,9 +80797,9 @@ B.eu=new A.a7(1/0,1/0,1/0,1/0)
 B.AK=new A.C(0.23529411764705882,0,0,0,B.h)
 B.HF=new A.h(0,4)
 B.yS=new A.cL(0.5,B.bK,B.AK,B.HF,10)
-B.EM=A.b(s([B.yS]),t.sq)
+B.EN=A.b(s([B.yS]),t.sq)
 B.aN=new A.EW(0,"rectangle")
-B.yN=new A.dn(null,null,null,B.hI,B.EM,null,B.aN)
+B.yN=new A.dn(null,null,null,B.hI,B.EN,null,B.aN)
 B.yO=new A.ET(1,"contain")
 B.ev=new A.ET(2,"cover")
 B.dg=new A.uS(0,"tight")
@@ -81021,7 +81021,7 @@ B.zI=new A.aaJ()
 B.a9=new A.aaM()
 B.c9=new A.aaO()
 B.d7=new A.KY(0,0,0,0)
-B.EW=A.b(s([]),A.al("y<Wx>"))
+B.EX=A.b(s([]),A.al("y<Wx>"))
 B.TU=new A.aaU()
 B.aQ={}
 B.rg=new A.bt(B.aQ,[],t.li)
@@ -81529,8 +81529,8 @@ B.D4=new A.id(B.CX,!1,0,"png")
 B.CV=new A.jr(B.Fd,B.D4,0,"png")
 B.Fe=A.b(s([71,73,70,56,55,97]),t.Z)
 B.CU=new A.jr(B.Fe,B.fj,1,"gif87a")
-B.EH=A.b(s([71,73,70,56,57,97]),t.Z)
-B.CT=new A.jr(B.EH,B.fj,2,"gif89a")
+B.EI=A.b(s([71,73,70,56,57,97]),t.Z)
+B.CT=new A.jr(B.EI,B.fj,2,"gif89a")
 B.DC=A.b(s([255,216,255]),t.Z)
 B.CY=new A.kT(2,"jpeg")
 B.D8=new A.id(B.CY,!1,3,"jpeg")
@@ -81570,6 +81570,19 @@ B.aT=new A.iM(0,"label")
 B.aC=new A.iM(1,"avatar")
 B.bH=new A.iM(2,"deleteIcon")
 B.Eo=A.b(s([B.aT,B.aC,B.bH]),A.al("y<iM>"))
+B.bP=new A.fM(6)
+B.h8=new A.l(!0,null,null,null,null,null,null,B.bP,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.ME=new A.fu("Si vous \xeates ici, c'est que vous avez pris le temps d'en apprendre plus sur moi, et je vous en remercie.\n",null,B.aX,B.h8)
+B.Lz=new A.dj(null,50,null,null)
+B.bS=new A.lk(4,"bottom")
+B.Sr=new A.iJ(B.Lz,B.bS,null,null)
+B.MC=new A.fu("\xc0 la suite de l\u2019obtention de mon titre professionnel de Concepteur D\xe9veloppeur d\u2019Applications, je suis actuellement \xe0 la recherche d\u2019une entreprise voulant m'accueillir en alternance pour mon Mast\xe8re professionnel de manager en architecture et applications logicielles des Syst\xe8mes d'information.\n",null,B.aX,null)
+B.Lw=new A.dj(null,35,null,null)
+B.k4=new A.iJ(B.Lw,B.bS,null,null)
+B.MB=new A.fu("Le monde du d\xe9veloppement est pour moi une opportunit\xe9 de m\u2019\xe9panouir dans un domaine qui m\u2019a toujours int\xe9ress\xe9 : l\u2019informatique et la technologie.\nCe choix n\u2019a pas \xe9t\xe9 une simple d\xe9cision d\u2019opportunisme, mais une v\xe9ritable tentative de renouer avec mon objectif de toujours que je n\u2019ai pu atteindre \xe0 la suite de difficult\xe9s scolaires et personnelles lors de mon enfance.\n",null,B.aX,null)
+B.MD=new A.fu("Il m\u2019a fallu pour cela faire mes preuves face \xe0 d\u2019autres candidats mieux qualifi\xe9s que moi, prouver la force de ma motivation et de mon envie de r\xe9ussir.\n",null,B.aX,null)
+B.MA=new A.fu("Je ne peux pr\xe9tendre avoir des ann\xe9es d\u2019exp\xe9rience derri\xe8re moi, ou avoir fait de grandes \xe9tudes dans les \xe9coles sup\xe9rieures, mais je peux vous assurer avoir en moi une capacit\xe9 d\u2019apprentissage et une pers\xe9v\xe9rance \xe0 toute \xe9preuve pour atteindre mon plein potentiel.",null,B.aX,null)
+B.Ep=A.b(s([B.ME,B.Sr,B.MC,B.k4,B.MB,B.k4,B.MD,B.k4,B.MA]),t.VO)
 B.Fl=new A.l8("en","US")
 B.md=A.b(s([B.Fl]),t.ss)
 B.SL=new A.k8(0,0)
@@ -81579,32 +81592,32 @@ B.SP=new A.k8(6,0.11)
 B.SN=new A.k8(8,0.12)
 B.SM=new A.k8(12,0.14)
 B.me=A.b(s([B.SL,B.SQ,B.SO,B.SP,B.SN,B.SM]),A.al("y<k8>"))
-B.Ew=A.b(s([-1,0,0,1,0,0,-1,0,1,0,0,0,-1,1,0,1,1,1,1,0]),t.n)
+B.Ex=A.b(s([-1,0,0,1,0,0,-1,0,1,0,0,0,-1,1,0,1,1,1,1,0]),t.n)
 B.yy=new A.EP(2,"outer")
 B.kY=new A.C(0.09803921568627451,0,0,0,B.h)
 B.yR=new A.cL(0.2,B.yy,B.kY,B.e,11)
-B.Ex=A.b(s([B.yR]),t.sq)
+B.Ey=A.b(s([B.yR]),t.sq)
 B.LZ=new A.zh(0,"left")
 B.M_=new A.zh(1,"right")
-B.Ey=A.b(s([B.LZ,B.M_]),A.al("y<zh>"))
+B.Ez=A.b(s([B.LZ,B.M_]),A.al("y<zh>"))
 B.a5=new A.zr(0,"upstream")
-B.Ez=A.b(s([B.a5,B.j]),A.al("y<zr>"))
+B.EA=A.b(s([B.a5,B.j]),A.al("y<zr>"))
 B.aL=new A.zv(0,"rtl")
 B.ac=new A.zv(1,"ltr")
 B.iH=A.b(s([B.aL,B.ac]),A.al("y<zv>"))
 B.zV=new A.py(0,"auto")
 B.zW=new A.py(1,"full")
 B.zX=new A.py(2,"chromium")
-B.EE=A.b(s([B.zV,B.zW,B.zX]),A.al("y<py>"))
-B.EG=A.b(s(["pointerdown","pointermove","pointerleave","pointerup","pointercancel","touchstart","touchend","touchmove","touchcancel","mousedown","mousemove","mouseleave","mouseup"]),t.s)
+B.EF=A.b(s([B.zV,B.zW,B.zX]),A.al("y<py>"))
+B.EH=A.b(s(["pointerdown","pointermove","pointerleave","pointerup","pointercancel","touchstart","touchend","touchmove","touchcancel","mousedown","mousemove","mouseleave","mouseup"]),t.s)
 B.J7=new A.Io(null)
 B.Jb=new A.xR(null)
 B.B0=new A.vf(null)
-B.EI=A.b(s([B.J7,B.Jb,B.B0]),t.E)
+B.EJ=A.b(s([B.J7,B.Jb,B.B0]),t.E)
 B.bg=new A.eb(1,"fuchsia")
 B.bh=new A.eb(3,"linux")
 B.bi=new A.eb(5,"windows")
-B.EJ=A.b(s([B.a4,B.bg,B.M,B.bh,B.aK,B.bi]),A.al("y<eb>"))
+B.EK=A.b(s([B.a4,B.bg,B.M,B.bh,B.aK,B.bi]),A.al("y<eb>"))
 B.xT=new A.tb(0,"topLeft")
 B.xW=new A.tb(3,"bottomRight")
 B.SG=new A.k7(B.xT,B.xW)
@@ -81613,55 +81626,42 @@ B.xU=new A.tb(1,"topRight")
 B.xV=new A.tb(2,"bottomLeft")
 B.SH=new A.k7(B.xU,B.xV)
 B.SI=new A.k7(B.xV,B.xU)
-B.EK=A.b(s([B.SG,B.SJ,B.SH,B.SI]),A.al("y<k7>"))
-B.EN=A.b(s(["click","scroll"]),t.s)
+B.EL=A.b(s([B.SG,B.SJ,B.SH,B.SI]),A.al("y<k7>"))
+B.EO=A.b(s(["click","scroll"]),t.s)
 B.yW=new A.pn()
 B.e4=new A.Jv(1,"page")
 B.fQ=new A.dw(B.F,B.e4)
-B.EO=A.b(s([B.yW,B.fQ]),A.al("y<aD>"))
-B.EY=A.b(s([]),t.QP)
+B.EP=A.b(s([B.yW,B.fQ]),A.al("y<aD>"))
+B.EZ=A.b(s([]),t.QP)
 B.mg=A.b(s([]),A.al("y<aIv>"))
-B.EU=A.b(s([]),t.D)
-B.F_=A.b(s([]),t.fJ)
-B.F1=A.b(s([]),t.ER)
-B.F2=A.b(s([]),t.tc)
+B.EV=A.b(s([]),t.D)
+B.F0=A.b(s([]),t.fJ)
+B.F2=A.b(s([]),t.ER)
+B.F3=A.b(s([]),t.tc)
 B.fr=A.b(s([]),t.jl)
-B.ET=A.b(s([]),t.wi)
-B.ES=A.b(s([]),A.al("y<aqi<@>>"))
+B.EU=A.b(s([]),t.wi)
+B.ET=A.b(s([]),A.al("y<aqi<@>>"))
 B.iJ=A.b(s([]),t.AO)
-B.EX=A.b(s([]),t.D1)
+B.EY=A.b(s([]),t.D1)
 B.iI=A.b(s([]),t.QF)
-B.EZ=A.b(s([]),t.Lx)
-B.F0=A.b(s([]),t.fm)
-B.EV=A.b(s([]),t.E)
-B.EQ=A.b(s([]),t.t)
+B.F_=A.b(s([]),t.Lx)
+B.F1=A.b(s([]),t.fm)
+B.EW=A.b(s([]),t.E)
+B.ER=A.b(s([]),t.t)
 B.mf=A.b(s([]),t.ee)
-B.ER=A.b(s([]),t.XS)
+B.ES=A.b(s([]),t.XS)
 B.iC=new A.fM(0)
 B.Cn=new A.fM(1)
 B.Co=new A.fM(2)
 B.o=new A.fM(3)
 B.U=new A.fM(4)
 B.Cp=new A.fM(5)
-B.bP=new A.fM(6)
 B.Cq=new A.fM(7)
 B.lU=new A.fM(8)
 B.mh=A.b(s([B.iC,B.Cn,B.Co,B.o,B.U,B.Cp,B.bP,B.Cq,B.lU]),A.al("y<fM>"))
 B.j6=new A.h(0,2)
 B.yQ=new A.cL(0.75,B.bK,B.kY,B.j6,1.5)
-B.F7=A.b(s([B.yQ]),t.sq)
-B.h8=new A.l(!0,null,null,null,null,null,null,B.bP,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.ME=new A.fu("Si vous \xeates ici, c'est que vous avez pris le temps d'en apprendre plus sur moi, et je vous en remercie.\n",null,B.aX,B.h8)
-B.Lz=new A.dj(null,50,null,null)
-B.bS=new A.lk(4,"bottom")
-B.Sr=new A.iJ(B.Lz,B.bS,null,null)
-B.MB=new A.fu("\xc0 la suite de l\u2019obtention de mon titre professionnel de Concepteur D\xe9veloppeur d\u2019Applications, je suis actuellement \xe0 la recherche d\u2019un premier emploi afin d\u2019entamer ma carri\xe8re professionnelle dans le m\xe9tier.\n",null,B.aX,null)
-B.Lw=new A.dj(null,35,null,null)
-B.k4=new A.iJ(B.Lw,B.bS,null,null)
-B.MC=new A.fu("Le monde du d\xe9veloppement est pour moi une opportunit\xe9 de m\u2019\xe9panouir dans un domaine qui m\u2019a toujours int\xe9ress\xe9 : l\u2019informatique et la technologie.\nCe choix n\u2019a pas \xe9t\xe9 une simple d\xe9cision d\u2019opportunisme, mais une v\xe9ritable tentative de renouer avec mon objectif de toujours que je n\u2019ai pu atteindre \xe0 la suite de difficult\xe9s scolaires et personnelles lors de mon enfance.\n",null,B.aX,null)
-B.MD=new A.fu("Il m\u2019a fallu pour cela faire mes preuves face \xe0 d\u2019autres candidats mieux qualifi\xe9s que moi, prouver la force de ma motivation et de mon envie de r\xe9ussir.\n",null,B.aX,null)
-B.MA=new A.fu("Je ne peux pr\xe9tendre avoir des ann\xe9es d\u2019exp\xe9rience derri\xe8re moi, ou avoir fait de grandes \xe9tudes dans les \xe9coles sup\xe9rieures, mais je peux vous assurer avoir en moi une capacit\xe9 d\u2019apprentissage et une pers\xe9v\xe9rance \xe0 toute \xe9preuve pour atteindre mon plein potentiel.",null,B.aX,null)
-B.Fc=A.b(s([B.ME,B.Sr,B.MB,B.k4,B.MC,B.k4,B.MD,B.k4,B.MA]),t.VO)
+B.F8=A.b(s([B.yQ]),t.sq)
 B.dF=A.b(s([B.c4,B.bt,B.er,B.es,B.hF]),t.QP)
 B.cQ=new A.fm(0,"controlModifier")
 B.cR=new A.fm(1,"shiftModifier")
@@ -82217,57 +82217,57 @@ B.E3=A.b(s([54,null,null,8589935158]),t.Z)
 B.E4=A.b(s([55,null,null,8589935159]),t.Z)
 B.E5=A.b(s([56,null,null,8589935160]),t.Z)
 B.E7=A.b(s([57,null,null,8589935161]),t.Z)
-B.EA=A.b(s([8589934852,8589934852,8589934853,null]),t.Z)
+B.EB=A.b(s([8589934852,8589934852,8589934853,null]),t.Z)
 B.DG=A.b(s([4294967555,null,4294967555,null]),t.Z)
 B.DH=A.b(s([4294968065,null,null,8589935154]),t.Z)
 B.DI=A.b(s([4294968066,null,null,8589935156]),t.Z)
 B.DJ=A.b(s([4294968067,null,null,8589935158]),t.Z)
 B.DK=A.b(s([4294968068,null,null,8589935160]),t.Z)
 B.DP=A.b(s([4294968321,null,null,8589935157]),t.Z)
-B.EB=A.b(s([8589934848,8589934848,8589934849,null]),t.Z)
+B.EC=A.b(s([8589934848,8589934848,8589934849,null]),t.Z)
 B.DF=A.b(s([4294967423,null,null,8589935150]),t.Z)
 B.DL=A.b(s([4294968069,null,null,8589935153]),t.Z)
 B.DE=A.b(s([4294967309,null,null,8589935117]),t.Z)
 B.DM=A.b(s([4294968070,null,null,8589935159]),t.Z)
 B.DQ=A.b(s([4294968327,null,null,8589935152]),t.Z)
-B.EC=A.b(s([8589934854,8589934854,8589934855,null]),t.Z)
+B.ED=A.b(s([8589934854,8589934854,8589934855,null]),t.Z)
 B.DN=A.b(s([4294968071,null,null,8589935155]),t.Z)
 B.DO=A.b(s([4294968072,null,null,8589935161]),t.Z)
-B.ED=A.b(s([8589934850,8589934850,8589934851,null]),t.Z)
-B.rj=new A.cY(["*",B.DR,"+",B.DS,"-",B.DT,".",B.DU,"/",B.DV,"0",B.DW,"1",B.DX,"2",B.DZ,"3",B.E0,"4",B.E1,"5",B.E2,"6",B.E3,"7",B.E4,"8",B.E5,"9",B.E7,"Alt",B.EA,"AltGraph",B.DG,"ArrowDown",B.DH,"ArrowLeft",B.DI,"ArrowRight",B.DJ,"ArrowUp",B.DK,"Clear",B.DP,"Control",B.EB,"Delete",B.DF,"End",B.DL,"Enter",B.DE,"Home",B.DM,"Insert",B.DQ,"Meta",B.EC,"PageDown",B.DN,"PageUp",B.DO,"Shift",B.ED],A.al("cY<D,U<o?>>"))
+B.EE=A.b(s([8589934850,8589934850,8589934851,null]),t.Z)
+B.rj=new A.cY(["*",B.DR,"+",B.DS,"-",B.DT,".",B.DU,"/",B.DV,"0",B.DW,"1",B.DX,"2",B.DZ,"3",B.E0,"4",B.E1,"5",B.E2,"6",B.E3,"7",B.E4,"8",B.E5,"9",B.E7,"Alt",B.EB,"AltGraph",B.DG,"ArrowDown",B.DH,"ArrowLeft",B.DI,"ArrowRight",B.DJ,"ArrowUp",B.DK,"Clear",B.DP,"Control",B.EC,"Delete",B.DF,"End",B.DL,"Enter",B.DE,"Home",B.DM,"Insert",B.DQ,"Meta",B.ED,"PageDown",B.DN,"PageUp",B.DO,"Shift",B.EE],A.al("cY<D,U<o?>>"))
 B.E6=A.b(s([B.mp,null,null,B.r5]),t.L)
-B.F4=A.b(s([B.qS,null,null,B.r6]),t.L)
-B.Ep=A.b(s([B.qT,null,null,B.r7]),t.L)
-B.EF=A.b(s([B.qU,null,null,B.cg]),t.L)
+B.F5=A.b(s([B.qS,null,null,B.r6]),t.L)
+B.Eq=A.b(s([B.qT,null,null,B.r7]),t.L)
+B.EG=A.b(s([B.qU,null,null,B.cg]),t.L)
 B.Dy=A.b(s([B.qV,null,null,B.r8]),t.L)
 B.Ff=A.b(s([B.qW,null,null,B.iV]),t.L)
-B.Fb=A.b(s([B.qX,null,null,B.dO]),t.L)
+B.Fc=A.b(s([B.qX,null,null,B.dO]),t.L)
 B.Ec=A.b(s([B.qY,null,null,B.ch]),t.L)
 B.Fi=A.b(s([B.qZ,null,null,B.dP]),t.L)
-B.Fa=A.b(s([B.r_,null,null,B.ci]),t.L)
+B.Fb=A.b(s([B.r_,null,null,B.ci]),t.L)
 B.Ea=A.b(s([B.r0,null,null,B.iW]),t.L)
 B.DD=A.b(s([B.r1,null,null,B.cj]),t.L)
 B.Ek=A.b(s([B.r2,null,null,B.dQ]),t.L)
-B.F5=A.b(s([B.r3,null,null,B.ck]),t.L)
-B.F6=A.b(s([B.r4,null,null,B.dR]),t.L)
+B.F6=A.b(s([B.r3,null,null,B.ck]),t.L)
+B.F7=A.b(s([B.r4,null,null,B.dR]),t.L)
 B.Ed=A.b(s([B.dM,B.dM,B.fy,null]),t.L)
 B.Fg=A.b(s([B.fu,null,B.fu,null]),t.L)
-B.Eq=A.b(s([B.bo,null,null,B.ch]),t.L)
-B.Er=A.b(s([B.b9,null,null,B.ci]),t.L)
-B.Es=A.b(s([B.ba,null,null,B.cj]),t.L)
+B.Er=A.b(s([B.bo,null,null,B.ch]),t.L)
+B.Es=A.b(s([B.b9,null,null,B.ci]),t.L)
+B.Et=A.b(s([B.ba,null,null,B.cj]),t.L)
 B.Fh=A.b(s([B.bp,null,null,B.ck]),t.L)
-B.F8=A.b(s([B.iO,null,null,B.iW]),t.L)
+B.F9=A.b(s([B.iO,null,null,B.iW]),t.L)
 B.Ee=A.b(s([B.dL,B.dL,B.fx,null]),t.L)
-B.EL=A.b(s([B.ap,null,null,B.cg]),t.L)
-B.Et=A.b(s([B.cd,null,null,B.dO]),t.L)
+B.EM=A.b(s([B.ap,null,null,B.cg]),t.L)
+B.Eu=A.b(s([B.cd,null,null,B.dO]),t.L)
 B.E9=A.b(s([B.ft,null,null,B.iU]),t.L)
-B.Eu=A.b(s([B.ce,null,null,B.dQ]),t.L)
-B.F9=A.b(s([B.iP,null,null,B.iV]),t.L)
+B.Ev=A.b(s([B.ce,null,null,B.dQ]),t.L)
+B.Fa=A.b(s([B.iP,null,null,B.iV]),t.L)
 B.Ef=A.b(s([B.dN,B.dN,B.fz,null]),t.L)
-B.Ev=A.b(s([B.dJ,null,null,B.dP]),t.L)
-B.EP=A.b(s([B.dK,null,null,B.dR]),t.L)
+B.Ew=A.b(s([B.dJ,null,null,B.dP]),t.L)
+B.EQ=A.b(s([B.dK,null,null,B.dR]),t.L)
 B.Eg=A.b(s([B.bR,B.bR,B.cf,null]),t.L)
-B.H1=new A.cY(["*",B.E6,"+",B.F4,"-",B.Ep,".",B.EF,"/",B.Dy,"0",B.Ff,"1",B.Fb,"2",B.Ec,"3",B.Fi,"4",B.Fa,"5",B.Ea,"6",B.DD,"7",B.Ek,"8",B.F5,"9",B.F6,"Alt",B.Ed,"AltGraph",B.Fg,"ArrowDown",B.Eq,"ArrowLeft",B.Er,"ArrowRight",B.Es,"ArrowUp",B.Fh,"Clear",B.F8,"Control",B.Ee,"Delete",B.EL,"End",B.Et,"Enter",B.E9,"Home",B.Eu,"Insert",B.F9,"Meta",B.Ef,"PageDown",B.Ev,"PageUp",B.EP,"Shift",B.Eg],A.al("cY<D,U<e?>>"))
+B.H1=new A.cY(["*",B.E6,"+",B.F5,"-",B.Eq,".",B.EG,"/",B.Dy,"0",B.Ff,"1",B.Fc,"2",B.Ec,"3",B.Fi,"4",B.Fb,"5",B.Ea,"6",B.DD,"7",B.Ek,"8",B.F6,"9",B.F7,"Alt",B.Ed,"AltGraph",B.Fg,"ArrowDown",B.Er,"ArrowLeft",B.Es,"ArrowRight",B.Et,"ArrowUp",B.Fh,"Clear",B.F9,"Control",B.Ee,"Delete",B.EM,"End",B.Eu,"Enter",B.E9,"Home",B.Ev,"Insert",B.Fa,"Meta",B.Ef,"PageDown",B.Ew,"PageUp",B.EQ,"Shift",B.Eg],A.al("cY<D,U<e?>>"))
 B.Hw={KeyA:0,KeyB:1,KeyC:2,KeyD:3,KeyE:4,KeyF:5,KeyG:6,KeyH:7,KeyI:8,KeyJ:9,KeyK:10,KeyL:11,KeyM:12,KeyN:13,KeyO:14,KeyP:15,KeyQ:16,KeyR:17,KeyS:18,KeyT:19,KeyU:20,KeyV:21,KeyW:22,KeyX:23,KeyY:24,KeyZ:25,Digit1:26,Digit2:27,Digit3:28,Digit4:29,Digit5:30,Digit6:31,Digit7:32,Digit8:33,Digit9:34,Digit0:35,Minus:36,Equal:37,BracketLeft:38,BracketRight:39,Backslash:40,Semicolon:41,Quote:42,Backquote:43,Comma:44,Period:45,Slash:46}
 B.rk=new A.bt(B.Hw,["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","0","-","=","[","]","\\",";","'","`",",",".","/"],t.li)
 B.Hs={Abort:0,Again:1,AltLeft:2,AltRight:3,ArrowDown:4,ArrowLeft:5,ArrowRight:6,ArrowUp:7,AudioVolumeDown:8,AudioVolumeMute:9,AudioVolumeUp:10,Backquote:11,Backslash:12,Backspace:13,BracketLeft:14,BracketRight:15,BrightnessDown:16,BrightnessUp:17,BrowserBack:18,BrowserFavorites:19,BrowserForward:20,BrowserHome:21,BrowserRefresh:22,BrowserSearch:23,BrowserStop:24,CapsLock:25,Comma:26,ContextMenu:27,ControlLeft:28,ControlRight:29,Convert:30,Copy:31,Cut:32,Delete:33,Digit0:34,Digit1:35,Digit2:36,Digit3:37,Digit4:38,Digit5:39,Digit6:40,Digit7:41,Digit8:42,Digit9:43,DisplayToggleIntExt:44,Eject:45,End:46,Enter:47,Equal:48,Escape:49,Esc:50,F1:51,F10:52,F11:53,F12:54,F13:55,F14:56,F15:57,F16:58,F17:59,F18:60,F19:61,F2:62,F20:63,F21:64,F22:65,F23:66,F24:67,F3:68,F4:69,F5:70,F6:71,F7:72,F8:73,F9:74,Find:75,Fn:76,FnLock:77,GameButton1:78,GameButton10:79,GameButton11:80,GameButton12:81,GameButton13:82,GameButton14:83,GameButton15:84,GameButton16:85,GameButton2:86,GameButton3:87,GameButton4:88,GameButton5:89,GameButton6:90,GameButton7:91,GameButton8:92,GameButton9:93,GameButtonA:94,GameButtonB:95,GameButtonC:96,GameButtonLeft1:97,GameButtonLeft2:98,GameButtonMode:99,GameButtonRight1:100,GameButtonRight2:101,GameButtonSelect:102,GameButtonStart:103,GameButtonThumbLeft:104,GameButtonThumbRight:105,GameButtonX:106,GameButtonY:107,GameButtonZ:108,Help:109,Home:110,Hyper:111,Insert:112,IntlBackslash:113,IntlRo:114,IntlYen:115,KanaMode:116,KeyA:117,KeyB:118,KeyC:119,KeyD:120,KeyE:121,KeyF:122,KeyG:123,KeyH:124,KeyI:125,KeyJ:126,KeyK:127,KeyL:128,KeyM:129,KeyN:130,KeyO:131,KeyP:132,KeyQ:133,KeyR:134,KeyS:135,KeyT:136,KeyU:137,KeyV:138,KeyW:139,KeyX:140,KeyY:141,KeyZ:142,KeyboardLayoutSelect:143,Lang1:144,Lang2:145,Lang3:146,Lang4:147,Lang5:148,LaunchApp1:149,LaunchApp2:150,LaunchAssistant:151,LaunchControlPanel:152,LaunchMail:153,LaunchScreenSaver:154,MailForward:155,MailReply:156,MailSend:157,MediaFastForward:158,MediaPause:159,MediaPlay:160,MediaPlayPause:161,MediaRecord:162,MediaRewind:163,MediaSelect:164,MediaStop:165,MediaTrackNext:166,MediaTrackPrevious:167,MetaLeft:168,MetaRight:169,MicrophoneMuteToggle:170,Minus:171,NonConvert:172,NumLock:173,Numpad0:174,Numpad1:175,Numpad2:176,Numpad3:177,Numpad4:178,Numpad5:179,Numpad6:180,Numpad7:181,Numpad8:182,Numpad9:183,NumpadAdd:184,NumpadBackspace:185,NumpadClear:186,NumpadClearEntry:187,NumpadComma:188,NumpadDecimal:189,NumpadDivide:190,NumpadEnter:191,NumpadEqual:192,NumpadMemoryAdd:193,NumpadMemoryClear:194,NumpadMemoryRecall:195,NumpadMemoryStore:196,NumpadMemorySubtract:197,NumpadMultiply:198,NumpadParenLeft:199,NumpadParenRight:200,NumpadSubtract:201,Open:202,PageDown:203,PageUp:204,Paste:205,Pause:206,Period:207,Power:208,PrintScreen:209,PrivacyScreenToggle:210,Props:211,Quote:212,Resume:213,ScrollLock:214,Select:215,SelectTask:216,Semicolon:217,ShiftLeft:218,ShiftRight:219,ShowAllWindows:220,Slash:221,Sleep:222,Space:223,Super:224,Suspend:225,Tab:226,Turbo:227,Undo:228,WakeUp:229,ZoomToggle:230}
@@ -82673,8 +82673,8 @@ B.Em=A.b(s(["Flutter","Firebase","Dart"]),t.s)
 B.DB=A.b(s(["assets/images/screenshots/project1/screen1.jpeg","assets/images/screenshots/project1/screen2.jpeg","assets/images/screenshots/project1/screen3.jpeg","assets/images/screenshots/project1/screen4.jpeg","assets/images/screenshots/project1/screen5.jpeg"]),t.s)
 B.J9=new A.o4("MeetBiak","assets/images/project1.jpg","Une application sociale d\xe9di\xe9e aux fans de K-Pop offrant une mise en relation via un syst\xe8me de swipe ainsi qu'une librairie d'idoles et groupes d'artistes, et une page affichant les derni\xe8res news sur le th\xe8me de la K-Pop.\nCr\xe9er et d\xe9velopp\xe9e par Cl\xe9ment Romond.",B.Em,"https://meetbiak.webflow.io/",B.DB)
 B.En=A.b(s(["Flutter","SQLite","Firebase","Dart"]),t.s)
-B.F3=A.b(s(["assets/images/screenshots/personal1/screen1.png","assets/images/screenshots/personal1/screen2.png","assets/images/screenshots/personal1/screen3.png","assets/images/screenshots/personal1/screen4.png","assets/images/screenshots/personal1/screen5.png","assets/images/screenshots/personal1/screen6.png","assets/images/screenshots/personal1/screen7.png","assets/images/screenshots/personal1/screen8.png","assets/images/screenshots/personal1/screen9.png","assets/images/screenshots/personal1/screen10.png"]),t.s)
-B.Ja=new A.o4("PocketPantryChef","assets/images/personal1.jpg","Ma propre application mobile permettant la gestion des ingr\xe9dients disponibles chez soi, la recherche de recettes en fonction de ceux-ci, la gestion de sa liste de courses, et enfin l'aide d'un 'chef virtuel' tournant sous Gemini.",B.En,null,B.F3)
+B.F4=A.b(s(["assets/images/screenshots/personal1/screen1.png","assets/images/screenshots/personal1/screen2.png","assets/images/screenshots/personal1/screen3.png","assets/images/screenshots/personal1/screen4.png","assets/images/screenshots/personal1/screen5.png","assets/images/screenshots/personal1/screen6.png","assets/images/screenshots/personal1/screen7.png","assets/images/screenshots/personal1/screen8.png","assets/images/screenshots/personal1/screen9.png","assets/images/screenshots/personal1/screen10.png"]),t.s)
+B.Ja=new A.o4("PocketPantryChef","assets/images/personal1.jpg","Ma propre application mobile permettant la gestion des ingr\xe9dients disponibles chez soi, la recherche de recettes en fonction de ceux-ci, la gestion de sa liste de courses, et enfin l'aide d'un 'chef virtuel' tournant sous Gemini.",B.En,null,B.F4)
 B.Jc=new A.xT(null,null,null,null,null,null)
 B.wg=new A.aQ(1,1)
 B.d0=new A.aQ(2,2)
@@ -83769,7 +83769,7 @@ r($,"aFm","aw3",()=>A.aEK())
 r($,"aLY","awr",()=>A.dP().gEs()+"roboto/v32/KFOmCnqEu92Fr1Me4GZLCzYlKw.woff2")
 r($,"aLo","anu",()=>A.aEy(A.at9(A.at9(A.aI4(),"window"),"FinalizationRegistry"),A.bs(new A.aj_())))
 r($,"aME","anJ",()=>new A.a3S())
-s($,"aLu","aw5",()=>A.aAx(B.Ew))
+s($,"aLu","aw5",()=>A.aAx(B.Ex))
 s($,"aLt","akn",()=>A.a0w(A.axL($.aw5())))
 s($,"aLi","aw0",()=>A.ar6(A.A(A.a9(),"ParagraphBuilder")))
 s($,"aMM","awS",()=>{var q=t.N,p=A.al("+breaks,graphemes,words(rP,rP,rP)"),o=A.alv(1e5,q,p),n=A.alv(1e4,q,p)
