@@ -62,7 +62,7 @@ class PresentationPage extends StatelessWidget {
                 WidgetSpan(child: SizedBox(height: 50,))
               ,
                 TextSpan(
-                  text: "À la suite de l’obtention de mon titre professionnel de Concepteur Développeur d’Applications, je suis actuellement à la recherche d’un premier emploi afin d’entamer ma carrière professionnelle dans le métier.\n",
+                  text: "À la suite de l’obtention de mon titre professionnel de Concepteur Développeur d’Applications, je suis actuellement à la recherche d’une entreprise voulant m'accueillir en alternance pour mon Mastère professionnel de manager en architecture et applications logicielles des Systèmes d'information.\n",
                 ),
                 WidgetSpan(child: SizedBox(height: 35,)),
                 TextSpan(text: "Le monde du développement est pour moi une opportunité de m’épanouir dans un domaine qui m’a toujours intéressé : l’informatique et la technologie.\n"
